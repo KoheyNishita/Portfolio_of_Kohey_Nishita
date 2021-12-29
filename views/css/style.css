@@ -18,10 +18,12 @@ body {
 
 .header-area {
     background-color: #FFED00;
+    display: flex;
 }
 
 .header-logo {
-    max-height: 86px;
+    width: 47px;
+    height: 86px;
 }
 
 .header-list {
