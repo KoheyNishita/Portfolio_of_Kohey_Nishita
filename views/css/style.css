@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'DIN-1451-Alt';
+    src: url('../font/din1451alt.ttf') format('truetype');
+    src: url('../font/din1451alt_G.ttf') format('truetype');
+}
+
+body {
+    font-family: 'DIN-1451-Alt', 'Noto Sans JP', 'メイリオ', 'Meiryo';
+    /* font-size: 14.5px; */
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* header {} */
+
+.header-area {
+    background-color: #FFED00;
+}
+
+.header-logo {
+    max-height: 86px;
+}
+
+.header-list {
+    display: flex;
+    color: #002E4E;
+}
+
+.header-list dt {
+    font-weight: 700;
+}
+
+.header-list dd {}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 500;
+}
