@@ -10,14 +10,18 @@
 </head>
 
 <body>
-    <div class="sideline"></div>
-    <div class="sideline-short"></div>
-    <div class="sideline"></div>
-    <div class="sideline-short"></div>
-
+    <!-- Side Line -->
+    <span class="sideline-long">
+        <div class="left"></div>
+        <div class="right"></div>
+    </span>
+    <span class="sideline-short">
+        <div class="left"></div>
+        <div class="right"></div>
+    </span>
 
     <header>
-        <div class="header-area">
+        <span class="header-area">
             <div>
                 <img src="views/img/Logo_Header_PC_4x.png" alt="" class="header-logo">
             </div>
@@ -33,17 +37,96 @@
                 <dt>連絡</dt>
                 <dd>Contact</dd>
             </dl>
-        </div>
+        </span>
     </header>
 
-    <picture>
+    <!-- Page 00: Top Page -->
+    <picture class="background">
         <source srcset="views/img/back_SP/00_SP.jpg" media="(max-width: 640px)">
         <source srcset="views/img/back_PC/00_PC.jpg">
-        <!-- <img src="./assets/img/mv_bg.png" alt=""> -->
     </picture>
 
-    <h1>Portfolio of Kohey Nishita</h1>
-    <h2>西田浩平のポートフォリオ</h2>
+    <!-- logo -->
+    <img src="views/img/Title_Top_Page.png" alt="" class="title-top">
+
+    <!-- Page 01: Profile -->
+    <span class="contents">
+        <div class="main-index">
+            <p class="ja">自己紹介</p>
+            <p class="en">Profile</p>
+            <div class="index-line"></div>
+        </div>
+        <p>
+            西田浩平（にした こうへい）です。<br>
+            MIDIを武器に「音」に特化したプログラマーを目指しています。<br>
+            趣味で作曲をし、ギター、ピアノも素人なりに演奏します。<br>
+            日本文化や地域の伝承に興味があり、いつかは「日本でしか生まれない作品」を作りたいと考えています。
+        </p>
+        <dl class="social-list">
+            <dt>GitHub</dt>
+            <dd>一部のWebページやアプリのソースコードを公開しています</dd>
+            <dt>Twitter</dt>
+            <dd>プログラミング以外にも音楽やゲームのことも呟いています</dd>
+            <dt>SoundCloud</dt>
+            <dd>自作曲を公開しています</dd>
+        </dl>
+
+        <div class="sub-index">
+            <p class="ja">経歴</p>
+            <p class="en">Carrer</p>
+            <div class="index-line"></div>
+        </div>
+        <dl class="carrer">
+            <dt>1994</dt>
+            <dd>石川県に生まれ、現在も在住</dd>
+            <dt>2007</dt>
+            <dd>パソコンを手にし、初めてネット掲示板で他人と交流する</dd>
+            <dt>2008</th>
+            <dd>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</dd>
+            <dt>2011</dt>
+            <dd>石川県に生まれ、現在も在住</dd>
+            <dt>2012</dt>
+            <dd>パソコンを手にし、初めてネット掲示板で他人と交流する</dd>
+            <dt>2014</th>
+            <dd>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</dd>
+            <dt>2021</th>
+            <dd>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</dd>
+            <dt>現在</th>
+            <dd>デジタルの楽譜のようなファイル形式であるMIDIを活用した音楽サービスやアプリを構想</dd>
+        </dl>
+    </span>
+
+    <!-- Page 02: Works -->
+    <span class="contents">
+        <div class="index">
+            <p class="ja">作品</p>
+            <p class="en">Works</p>
+            <div class="index-line"></div>
+        </div>
+    </span>
+
+    <!-- Page 03: Skills -->
+    <span class="contents">
+        <div class="index">
+            <p class="ja">技能</p>
+            <p class="en">Skills</p>
+            <div class="index-line"></div>
+        </div>
+
+    </span>
+
+    <!-- Page 04: Contact -->
+    <span class="contents">
+        <div class="index">
+            <p class="ja">連絡</p>
+            <p class="en">Contact</p>
+            <div class="index-line"></div>
+        </div>
+    </span>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>

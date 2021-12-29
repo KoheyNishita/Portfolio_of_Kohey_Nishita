@@ -8,10 +8,49 @@
 
 body {
     font-family: 'DIN-1451-Alt', 'Noto Sans JP', 'メイリオ', 'Meiryo';
-    /* font-size: 14.5px; */
+    font-size: 24px;
+    color: #FFF;
     height: 100%;
     padding: 0;
     margin: 0;
+    background-color: #002E4E;
+}
+
+/* Background */
+
+.background {
+    max-width: 1920px;
+}
+
+.sideline-long {
+    width: 5px;
+    height: 100%;
+    background-color: #FFF;
+    background-color: #000;
+    margin: 0 50px;
+}
+
+.sideline-long .left {
+    float: left;
+}
+
+.sideline-long .right {
+    float: right;
+}
+
+.sideline-short {
+    width: 8px;
+    height: 86px;
+    background-color: #FFF;
+    margin: 0 63px;
+}
+
+.sideline-short .left {
+    float: left;
+}
+
+.sideline-short .right {
+    float: right;
 }
 
 /* header {} */
@@ -19,6 +58,7 @@ body {
 .header-area {
     background-color: #FFED00;
     display: flex;
+    height: 86px;
 }
 
 .header-logo {
@@ -33,9 +73,48 @@ body {
 
 .header-list dt {
     font-weight: 700;
+    font-size: 36px;
 }
 
-.header-list dd {}
+.header-list dd {
+    font-size: 22px;
+}
+
+/* Parts */
+
+.contents {
+    /* display: flex; */
+}
+
+.main-index {}
+
+.main-index .ja {
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.main-index .en {
+    font-size: 31px;
+}
+
+.sub-index {}
+
+.sub-index .ja {}
+
+.sub-index .en {}
+
+.index-line {
+    width: 6px;
+    height: 102px;
+    background-color: #FFF;
+}
+
+/* Page 00: Top Page */
+
+.title-top {
+    width: 623px;
+    height: 166px;
+}
 
 h1 {
     font-weight: 500;
@@ -44,3 +123,30 @@ h1 {
 h2 {
     font-weight: 500;
 }
+
+/* Page 01: Profile */
+.social-list {
+    display: flex;
+}
+
+.social-list th {
+    font-weight: 500;
+}
+
+.social-list tr {}
+
+.carrer {
+    display: flex;
+}
+
+.carrer th {
+    font-weight: 500;
+}
+
+.carrer tr {}
+
+/* Page 02: Works */
+
+/* Page 03: Skills */
+
+/* Page 04: Contact */
