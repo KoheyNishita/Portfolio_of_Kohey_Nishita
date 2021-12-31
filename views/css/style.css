@@ -6,6 +6,10 @@
     src: url('../font/din1451alt_G.ttf') format('truetype');
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'DIN-1451-Alt', 'Noto Sans JP', 'メイリオ', 'Meiryo';
     font-size: 24px;
@@ -22,39 +26,57 @@ body {
     max-width: 1920px;
 }
 
-/* Side Line */
+.back-sp-2 {
+    position: fixed;
+}
+
+/* Sideline Long */
 
 .sideline-long {
     width: 5px;
     height: 100%;
     background-color: #FFF;
+    position: fixed;
+}
+
+.sideline-long-grp {
     margin: 0 50px;
 }
 
-.sideline-long .left {
+.sideline-long-grp .left {
     float: left;
 }
 
-.sideline-long .right {
+.sideline-long-grp .right {
     float: right;
 }
+
+/* Sideline Short */
 
 .sideline-short {
     width: 8px;
     height: 86px;
     background-color: #FFF;
+}
+
+.sideline-short-grp {
+    /* float: */
     margin: 0 63px;
 }
 
-.sideline-short .left {
+.sideline-short-grp .left {
     float: left;
+    margin-right: 5px;
+    margin-top: 1080px;
 }
 
-.sideline-short .right {
+.sideline-short-grp .right {
     float: right;
+    margin-left: 5px;
+    margin-top: 1080px;
 }
 
-/* End Line */
+/* Endline */
 
 .endline {
     width: 12px;
@@ -82,6 +104,8 @@ body {
 .contents {
     width: 80%;
     align-items: center;
+    margin: 0 122px;
+    padding-top: 86px;
 }
 
 li {
@@ -106,41 +130,52 @@ h1 {
     display: flex;
 }
 
-.main-index-ja {
+.main-index .ja {
     font-size: 47px;
     font-weight: 700;
 }
 
-.main-index-en {
+.main-index .en {
     font-size: 31px;
     font-weight: 500;
+}
+
+.main-index .index-line {
+    width: 6px;
+    height: 102px;
+    background-color: #FFF;
 }
 
 .sub-index {
     display: flex;
 }
 
-.sub-index-ja {
+.sub-index .ja {
     font-size: 38px;
     font-weight: 700;
 }
 
-.sub-index-en {
+.sub-index .en {
     font-size: 24px;
     font-weight: 500;
+}
+
+.sub-index .index-line {
+    width: 5px;
+    height: 62px;
+    background-color: #FFF;
 }
 
 .index-about {
     font-size: 24px;
 }
 
-.index-line {
-    width: 6px;
-    height: 102px;
-    background-color: #FFF;
-}
+/* Header */
 
-/* header {} */
+header {
+    width: 100%;
+    position: fixed;
+}
 
 .header-area {
     background-color: #FFED00;
@@ -151,11 +186,18 @@ h1 {
 .header-logo {
     width: 47px;
     height: 86px;
+    margin-left: 63px;
 }
 
 .header-list {
     display: flex;
     color: #002E4E;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list a {
+    display: flex;
 }
 
 .header-list dt {
@@ -186,14 +228,19 @@ h1 {
 .social-list tr {}
 
 .carrer {
-    display: flex;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
 }
 
-.carrer th {
+.carrer dt {
+    width: 20%;
     font-weight: 500;
 }
 
-.carrer tr {}
+.carrer dd {
+    width: 80%;
+}
 
 /* Page 02: Works */
 
@@ -273,7 +320,6 @@ h1 {
 
 .contact-area li {
     display: flex;
-
 }
 
 .contact-area li p {}
