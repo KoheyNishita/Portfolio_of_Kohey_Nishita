@@ -22,11 +22,12 @@ body {
     max-width: 1920px;
 }
 
+/* Side Line */
+
 .sideline-long {
     width: 5px;
     height: 100%;
     background-color: #FFF;
-    background-color: #000;
     margin: 0 50px;
 }
 
@@ -51,6 +52,92 @@ body {
 
 .sideline-short .right {
     float: right;
+}
+
+/* End Line */
+
+.endline {
+    width: 12px;
+    height: 186px;
+    background-color: #FFF;
+    margin: 0 2px;
+}
+
+.endline-grp {}
+
+.endline-grp .left {
+    float: left;
+    margin-left: 61px;
+    display: flex;
+}
+
+.endline-grp .right {
+    float: right;
+    margin-right: 61px;
+    display: flex;
+}
+
+/* Parts */
+
+.contents {
+    width: 80%;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.color-kariyasu {
+    color: #FFED00;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+/* Index */
+
+.index-area {
+    display: flex;
+}
+
+.main-index {
+    display: flex;
+}
+
+.main-index-ja {
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.main-index-en {
+    font-size: 31px;
+    font-weight: 500;
+}
+
+.sub-index {
+    display: flex;
+}
+
+.sub-index-ja {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.sub-index-en {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.index-about {
+    font-size: 24px;
+}
+
+.index-line {
+    width: 6px;
+    height: 102px;
+    background-color: #FFF;
 }
 
 /* header {} */
@@ -80,48 +167,11 @@ body {
     font-size: 22px;
 }
 
-/* Parts */
-
-.contents {
-    /* display: flex; */
-}
-
-.main-index {}
-
-.main-index .ja {
-    font-size: 47px;
-    font-weight: 700;
-}
-
-.main-index .en {
-    font-size: 31px;
-}
-
-.sub-index {}
-
-.sub-index .ja {}
-
-.sub-index .en {}
-
-.index-line {
-    width: 6px;
-    height: 102px;
-    background-color: #FFF;
-}
-
 /* Page 00: Top Page */
 
-.title-top {
+.title-img {
     width: 623px;
     height: 166px;
-}
-
-h1 {
-    font-weight: 500;
-}
-
-h2 {
-    font-weight: 500;
 }
 
 /* Page 01: Profile */
@@ -147,6 +197,97 @@ h2 {
 
 /* Page 02: Works */
 
+.works-area {}
+
+.works-contents {}
+
+.works-contents img {
+    width: 30%;
+    border: 5px solid #FFF;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.works-about {
+    display: flex;
+}
+
+.works-about h4 {
+    font-weight: 500;
+}
+
+.works-line {
+    width: 5px;
+    height: 62px;
+    background-color: #FFF;
+    margin: 0 63px;
+}
+
 /* Page 03: Skills */
 
+.skills-area {}
+
+.skills-level {
+    display: flex;
+}
+
+.graph {
+    display: flex;
+}
+
+.graph-list {
+    width: 420px;
+    /* height: 100%; */
+    border: 5px solid #FFF;
+}
+
+.graph-list ul {}
+
+.graph-list li {}
+
+.marks {
+    display: flex;
+}
+
+.pt1 {
+    width: 35px;
+    height: 20px;
+    background-color: #FFF;
+}
+
+.pt0 {
+    width: 35px;
+    height: 20px;
+    border: 2px solid #FFF;
+    box-sizing: border-box;
+}
+
 /* Page 04: Contact */
+
+.contact-area {}
+
+.contact-area ul {
+    /* align-items: right; */
+}
+
+.contact-area li {
+    display: flex;
+
+}
+
+.contact-area li p {}
+
+.contact-area li input {
+    width: 522px;
+}
+
+.btn {}
+
+/* Footer */
+.footer-area {
+    width: 80%;
+    height: 80px;
+    text-align: left;
+    margin: 0 0 51px 226px;
+}

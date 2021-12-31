@@ -10,20 +10,11 @@
 </head>
 
 <body>
-    <!-- Side Line -->
-    <span class="sideline-long">
-        <div class="left"></div>
-        <div class="right"></div>
-    </span>
-    <span class="sideline-short">
-        <div class="left"></div>
-        <div class="right"></div>
-    </span>
-
+    <!-- Header -->
     <header>
-        <span class="header-area">
+        <div class="header-area">
             <div>
-                <img src="views/img/Logo_Header_PC_4x.png" alt="" class="header-logo">
+                <img src="views/img/logo/logo_header_PC_4x.png" alt="" class="header-logo">
             </div>
             <dl class="header-list">
                 <dt>入口</dt>
@@ -37,23 +28,31 @@
                 <dt>連絡</dt>
                 <dd>Contact</dd>
             </dl>
-        </span>
+        </div>
     </header>
+
+    <!-- Side Line -->
+    <div class="sideline-long">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="sideline-short">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
 
     <!-- Page 00: Top Page -->
     <picture class="background">
         <source srcset="views/img/back_SP/00_SP.jpg" media="(max-width: 640px)">
         <source srcset="views/img/back_PC/00_PC.jpg">
     </picture>
-
-    <!-- logo -->
-    <img src="views/img/Title_Top_Page.png" alt="" class="title-top">
+    <img src="views/img/logo/Title_Top_Page.png" alt="" class="title-img">
 
     <!-- Page 01: Profile -->
-    <span class="contents">
+    <div class="contents">
         <div class="main-index">
-            <p class="ja">自己紹介</p>
-            <p class="en">Profile</p>
+            <h2 class="main-index-ja"><span class="color-kariyasu">自</span>己紹介</h2>
+            <h3 class="main-index-en"><span class="color-kariyasu">P</span>rofile</h3>
             <div class="index-line"></div>
         </div>
         <p>
@@ -70,10 +69,12 @@
             <dt>SoundCloud</dt>
             <dd>自作曲を公開しています</dd>
         </dl>
+        <img src="views/img_updated/icon.png" alt="">
 
+        <!-- Carrer -->
         <div class="sub-index">
-            <p class="ja">経歴</p>
-            <p class="en">Carrer</p>
+            <h2 class="sub-index-ja">経歴</h2>
+            <p class="sub-index-en">Carrer</p>
             <div class="index-line"></div>
         </div>
         <dl class="carrer">
@@ -94,38 +95,301 @@
             <dt>現在</th>
             <dd>デジタルの楽譜のようなファイル形式であるMIDIを活用した音楽サービスやアプリを構想</dd>
         </dl>
-    </span>
+    </div>
 
     <!-- Page 02: Works -->
-    <span class="contents">
-        <div class="index">
-            <p class="ja">作品</p>
-            <p class="en">Works</p>
-            <div class="index-line"></div>
+    <div class="contents">
+        <div class="index-area">
+            <div class="main-index">
+                <h2 class="main-index-ja"><span class="color-kariyasu">作</span>品</h2>
+                <h3 class="main-index-en"><span class="color-kariyasu">W</span>orks</h3>
+                <div class="index-line"></div>
+            </div>
+            <p class="index-about">
+                今のところは学習として作成したものや趣味の作品を主に掲載しています。
+            </p>
         </div>
-    </span>
+
+        <ul class="works-area">
+            <li class="works-contents">
+                <img src="views/img_updated/works00_empty.png" alt="">
+                <div class="works-about">
+                    <div class="works-line"></div>
+                    <h4>AirPortfolio of Kohey Nishita</h4>
+                    <p>このページです。自己紹介を載せています。</p>
+                </div>
+            </li>
+            <li class="works-contents">
+                <img src="views/img_updated/works02.jpg" alt="">
+                <div class="works-about">
+                    <div class="works-line"></div>
+                    <h4>Twitter（クローン）</h4>
+                    <p>TECH I.S.のカリキュラムにて作成しました。</p>
+                </div>
+            </li>
+            <li class="works-contents">
+                <img src="views/img_updated/works00_empty.png" alt="">
+                <div class="works-about">
+                    <div class="works-line"></div>
+                    <h4>万華響（構想のみ）</h4>
+                    <p>MIDIビジュアライザーです</p>
+                </div>
+            </li>
+            <li class="works-contents">
+                <img src="views/img_updated/works00_empty.png" alt="">
+                <div class="works-about">
+                    <div class="works-line"></div>
+                    <h4>MIDI SNS（構想のみ）</h4>
+                    <p>誰でも簡単に作曲できるSNSです</p>
+                </div>
+            </li>
+            <li class="works-contents">
+                <img src="views/img_updated/works05.jpg" alt="">
+                <div class="works-about">
+                    <div class="works-line"></div>
+                    <h4>水神鷲（制作中）</h4>
+                    <p>趣味としてUnity, C#で制作中のRPGです。</p>
+                </div>
+            </li>
+            <li class="works-contents">
+                <img src="views/img_updated/works00_empty.png" alt="">
+                <div class="works-about">
+                    <div class="works-line"></div>
+                    <h4>作品がまだない</h4>
+                    <p>今後追加される予定です。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
 
     <!-- Page 03: Skills -->
-    <span class="contents">
-        <div class="index">
-            <p class="ja">技能</p>
-            <p class="en">Skills</p>
-            <div class="index-line"></div>
+    <div class="contents">
+        <div class="index-area">
+            <div class="main-index">
+                <h2 class="main-index-ja"><span class="color-kariyasu">技</span>能</h2>
+                <h3 class="main-index-en"><span class="color-kariyasu">S</span>kills</h3>
+                <div class="index-line"></div>
+            </div>
+            <p class="index-about">
+                その言語やツールをどれぐらい使えているかボックスの数で示しています。
+            </p>
         </div>
+        <div class="skills-area">
+            <ul class="skills-level">
+                <li>1 : 多少使える</li>
+                <li>2 : ある程度慣れている</li>
+                <li>3 : 難なく使える</li>
+                <li>4 : 実務で多少使える</li>
+                <li>5 : 実務で難なく使いこなせる</li>
+            </ul>
 
-    </span>
+            <div class="graph">
+                <p>Programing<br>Languages</p>
+                <div class="graph-list">
+                    <ul>
+                        <li>
+                            <p>HTML</p>
+                            <div class="marks">
+                                <div class="pt1"></div>
+                                <div class="pt1"></div>
+                                <div class="pt1"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>CSS</p>
+                            <div class="marks">
+                                <div class="pt1"></div>
+                                <div class="pt1"></div>
+                                <div class="pt1"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p> - Bootstrap</p>
+                            <div class="marks">
+                                <div class="pt1"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>JavaScript</p>
+                            <div class="marks">
+                                <div class="pt1"></div>
+                                <div class="pt1"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p> - jQuery</p>
+                            <div class="marks">
+                                <div class="pt1"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>PHP</p>
+                            <div class="marks">
+                                <div class="pt1"></div>
+                                <div class="pt1"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>MySQL</p>
+                            <div class="marks">
+                                <div class="pt1"></div>
+                                <div class="pt1"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                                <div class="pt0"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="graph">
+                    <p>Others</p>
+                    <div class="graph-list">
+                        <ul>
+                            <li>
+                                <p>Illustrator</p>
+                                <div class="marks">
+                                    <div class="pt1"></div>
+                                    <div class="pt1"></div>
+                                    <div class="pt1"></div>
+                                    <div class="pt0"></div>
+                                    <div class="pt0"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Photoshop</p>
+                                <div class="marks">
+                                    <div class="pt1"></div>
+                                    <div class="pt1"></div>
+                                    <div class="pt0"></div>
+                                    <div class="pt0"></div>
+                                    <div class="pt0"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>XD</p>
+                                <div class="marks">
+                                    <div class="pt1"></div>
+                                    <div class="pt1"></div>
+                                    <div class="pt0"></div>
+                                    <div class="pt0"></div>
+                                    <div class="pt0"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Music Creation</p>
+                                <div class="marks">
+                                    <div class="pt1"></div>
+                                    <div class="pt1"></div>
+                                    <div class="pt1"></div>
+                                    <div class="pt0"></div>
+                                    <div class="pt0"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Video Creation</p>
+                                <div class="marks">
+                                    <div class="pt1"></div>
+                                    <div class="pt1"></div>
+                                    <div class="pt0"></div>
+                                    <div class="pt0"></div>
+                                    <div class="pt0"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-index">
+                <h2 class="sub-index-ja">総評</h2>
+                <p class="sub-index-en">Comment</p>
+                <div class="index-line"></div>
+            </div>
+            <p>プログラマーとしてみればまだまだ初心者ですが、画像編集、デザイン等は一通りこなせます。</p>
+        </div>
+    </div>
 
     <!-- Page 04: Contact -->
-    <span class="contents">
-        <div class="index">
-            <p class="ja">連絡</p>
-            <p class="en">Contact</p>
-            <div class="index-line"></div>
+    <div class="contents">
+        <div class="index-area">
+            <div class="main-index">
+                <h2 class="main-index-ja"><span class="color-kariyasu">連</span>絡</h2>
+                <h3 class="main-index-en"><span class="color-kariyasu">C</span>ontact</h3>
+                <div class="index-line"></div>
+            </div>
+            <p class="index-about">
+                私やこのサイトについてのコメントなどがありましたら、下記フォームをご利用ください。
+                なお、全て必須項目となります。
+            </p>
         </div>
-    </span>
 
+        <!-- Forms -->
+        <div class="contact-area">
+            <ul>
+                <li>
+                    <p>名前 Name</p>
+                    <input type="text" name="name" id="name" value="">
+                </li>
+                <li>
+                    <p>メール Mail</p>
+                    <input type="text" name="mail" id="mail" value="">
+                </li>
+                <li>
+                    <p>題名 Title</p>
+                    <input type="text" name="title" id="title" value="">
+                </li>
+                <li>
+                    <p>本文 Comment</p>
+                    <input type="text" name="comment" id="comment" value="">
+                </li>
+            </ul>
+            <!-- Button -->
+            <button type="submit" name="update" id="update" class="btn">
+                送信 Send
+            </button>
+        </div>
+    </div>
+
+    <!-- End Line -->
+    <div class="endline-grp">
+        <div class="left">
+            <div class="endline"></div>
+            <div class="endline"></div>
+            <div class="endline"></div>
+            <div class="endline"></div>
+        </div>
+        <div class="right">
+            <div class="endline"></div>
+            <div class="endline"></div>
+            <div class="endline"></div>
+            <div class="endline"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
-
+        <div class="footer-area">
+            © 2021 西田浩平 Kohey Nishita
+        </div>
     </footer>
 </body>
 
