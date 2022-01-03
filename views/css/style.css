@@ -11,13 +11,32 @@ html {
 }
 
 body {
-    font-family: 'DIN-1451-Alt', 'Noto Sans JP', 'メイリオ', 'Meiryo';
+    font-family: 'Noto Sans JP', 'メイリオ', 'Meiryo';
     font-size: 24px;
     color: #FFF;
+    box-sizing: border-box;
     height: 100%;
     padding: 0;
     margin: 0;
     background-color: #002E4E;
+    background-image:
+        url("../img/back_PC/00_PC.jpg"),
+        url("../img/back_PC/01.jpg"),
+        url("../img/back_PC/02.jpg"),
+        url("../img/back_PC/03.jpg"),
+        url("../img/back_PC/04.jpg");
+    background-position:
+        left,
+        0 calc(1080px * 1),
+        0 calc(1080px * 2),
+        0 calc(1080px * 3),
+        0 calc(1080px * 4);
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
 }
 
 /* Background */
@@ -26,7 +45,9 @@ body {
     max-width: 1920px;
 }
 
-.back-sp-2 {
+.back-sp-0-top {}
+
+.back-sp-1 {
     position: fixed;
 }
 
@@ -133,11 +154,14 @@ h1 {
 .main-index .ja {
     font-size: 47px;
     font-weight: 700;
+    height: 80%;
 }
 
 .main-index .en {
     font-size: 31px;
     font-weight: 500;
+    font-family: 'DIN-1451-Alt';
+    height: 20%;
 }
 
 .main-index .index-line {
@@ -158,6 +182,7 @@ h1 {
 .sub-index .en {
     font-size: 24px;
     font-weight: 500;
+    font-family: 'DIN-1451-Alt';
 }
 
 .sub-index .index-line {
@@ -207,6 +232,7 @@ header {
 
 .header-list dd {
     font-size: 22px;
+    font-family: 'DIN-1451-Alt';
 }
 
 /* Page 00: Top Page */
@@ -221,11 +247,14 @@ header {
     display: flex;
 }
 
-.social-list th {
+.social-list dt {
     font-weight: 500;
+    font-family: 'DIN-1451-Alt';
 }
 
-.social-list tr {}
+.social-list dd {
+    font-weight: 500;
+}
 
 .carrer {
     /* display: flex; */
@@ -281,6 +310,7 @@ header {
 
 .graph {
     display: flex;
+    font-family: 'DIN-1451-Alt', 'Noto Sans JP';
 }
 
 .graph-list {
@@ -314,17 +344,19 @@ header {
 
 .contact-area {}
 
-.contact-area ul {
+.contact-area dl {
     /* align-items: right; */
 }
 
-.contact-area li {
+.contact-area dt {
     display: flex;
 }
 
-.contact-area li p {}
+.contact-area dd {
+    display: flex;
+}
 
-.contact-area li input {
+.contact-area dd input {
     width: 522px;
 }
 

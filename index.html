@@ -42,11 +42,17 @@
     </header>
 
     <!-- Background -->
-    <picture class="background">
-        <source srcset="views/img/back_SP/01.jpg" media="(max-width: 640px)" class="back-sp-2">
-        <source srcset="views/img/back_SP/00_SP.jpg" media="(max-width: 640px)">
+    <!-- <picture class="background">
+        <source srcset="views/img/back_SP/01.jpg" media="(max-width: 640px)" class="back-sp-1">
+        <source srcset="views/img/back_SP/00_SP.jpg" media="(max-width: 640px)" class="back-sp-0-top">
         <source srcset="views/img/back_PC/00_PC.jpg">
-    </picture>
+    </picture> -->
+
+    <div class="background-0"></div>
+    <div class="background-1"></div>
+    <div class="background-2"></div>
+    <div class="background-3"></div>
+    <div class="background-4"></div>
 
     <!-- Sideline Long -->
     <div class="sideline-long-grp">
@@ -109,12 +115,12 @@
     </div>
 
     <!-- Page 00: Top Page -->
-    <div class="contents">
+    <section class="contents">
         <img src="views/img/logo/Title_Top_Page.png" alt="" class="title-img">
-    </div>
+    </section>
 
     <!-- Page 01: Profile -->
-    <div class="contents">
+    <section class="contents">
         <div class="main-index">
             <h2 class="ja"><span class="color-kariyasu">自</span>己紹介</h2>
             <h3 class="en"><span class="color-kariyasu">P</span>rofile</h3>
@@ -160,10 +166,10 @@
             <dt>現在</th>
             <dd>デジタルの楽譜のようなファイル形式であるMIDIを活用した音楽サービスやアプリを構想</dd>
         </dl>
-    </div>
+    </section>
 
     <!-- Page 02: Works -->
-    <div class="contents">
+    <section class="contents">
         <div class="index-area">
             <div class="main-index">
                 <h2 class="ja"><span class="color-kariyasu">作</span>品</h2>
@@ -225,10 +231,10 @@
                 </div>
             </li>
         </ul>
-    </div>
+    </section>
 
     <!-- Page 03: Skills -->
-    <div class="contents">
+    <section class="contents">
         <div class="index-area">
             <div class="main-index">
                 <h2 class="ja"><span class="color-kariyasu">技</span>能</h2>
@@ -391,10 +397,10 @@
             </div>
             <p>プログラマーとしてみればまだまだ初心者ですが、画像編集、デザイン等は一通りこなせます。</p>
         </div>
-    </div>
+    </section>
 
     <!-- Page 04: Contact -->
-    <div class="contents">
+    <section class="contents">
         <div class="index-area">
             <div class="main-index">
                 <h2 class="ja"><span class="color-kariyasu">連</span>絡</h2>
@@ -406,56 +412,48 @@
                 なお、全て必須項目となります。
             </p>
         </div>
-
         <!-- Forms -->
         <div class="contact-area">
-            <ul>
-                <li>
-                    <p>名前 Name</p>
-                    <input type="text" name="name" id="name" value="">
-                </li>
-                <li>
-                    <p>メール Mail</p>
-                    <input type="text" name="mail" id="mail" value="">
-                </li>
-                <li>
-                    <p>題名 Title</p>
-                    <input type="text" name="title" id="title" value="">
-                </li>
-                <li>
-                    <p>本文 Comment</p>
-                    <input type="text" name="comment" id="comment" value="">
-                </li>
-            </ul>
+            <dl>
+                <dt>名前 Name</dt>
+                <dd><input type="text" name="name" id="name" value=""></dd>
+                <dt></dt>メール Mail</dt>
+                <dd><input type="text" name="mail" id="mail" value=""></dd>
+                <dt>題名 Title</dt>
+                <dd><input type="text" name="title" id="title" value=""></dd>
+                <dt>本文 Comment</dt>
+                <dd><input type="text" name="comment" id="comment" value=""></dd>
+            </dl>
             <!-- Button -->
             <button type="submit" name="update" id="update" class="btn">
                 送信 Send
             </button>
         </div>
-    </div>
+        </div>
 
-    <!-- End Line -->
-    <div class="endline-grp">
-        <div class="left">
-            <div class="endline"></div>
-            <div class="endline"></div>
-            <div class="endline"></div>
-            <div class="endline"></div>
+        <!-- End Line -->
+        <div class="endline-grp">
+            <div class="left">
+                <div class="endline"></div>
+                <div class="endline"></div>
+                <div class="endline"></div>
+                <div class="endline"></div>
+            </div>
+            <div class="right">
+                <div class="endline"></div>
+                <div class="endline"></div>
+                <div class="endline"></div>
+                <div class="endline"></div>
+            </div>
         </div>
-        <div class="right">
-            <div class="endline"></div>
-            <div class="endline"></div>
-            <div class="endline"></div>
-            <div class="endline"></div>
-        </div>
-    </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-area">
-            © 2021 西田浩平 Kohey Nishita
-        </div>
-    </footer>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-area">
+                © 2021 西田浩平 Kohey Nishita
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
