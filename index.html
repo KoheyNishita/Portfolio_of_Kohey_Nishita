@@ -119,22 +119,24 @@
             </p>
             <img src="views/img_updated/icon.png" alt="">
         </div>
-        <ul class="social-list">
-            <li>
-                <a href="">GitHub</a>
-                <p>一部のWebページやアプリのソースコードを公開しています</p>
-            </li>
-            <li>
-                <a href="">Twitter</a>
-                <p>プログラミング以外にも音楽やゲームのことも呟いています</p>
-            </li>
-            <li>
-                <a href="">SoundCloud</a>
-                <p>自作曲を公開しています</p>
-            </li>
-        </ul>
+        <table class="social-list">
+            <tr>
+                <td class="td-right"><a href="">GitHub</a></td>
+                <td><span>一部のWebページやアプリのソースコードを公開しています</span></td>
+            </tr>
+            <tr>
+                <td class="td-right"><a href="">Twitter</a></td>
+                <td><span>プログラミング以外にも音楽やゲームのことも呟いています</span></td>
+            </tr>
+            <tr>
+                <td class="td-right"><a href="">SoundCloud</a></td>
+                <td><span>自作曲を公開しています</span></td>
+            </tr>
+        </table>
+    </section>
 
-        <!-- Career -->
+    <!-- Career -->
+    <div class="carrer">
         <div class="sub-index">
             <div class="textbox">
                 <h2 class="ja">経歴</h2>
@@ -142,24 +144,41 @@
             </div>
             <span class="index-line"></span>
         </div>
-        <dl class="carrer">
-            <dt>1994</dt>
-            <dd>石川県に生まれ、現在も在住</dd>
-            <dt>2007</dt>
-            <dd>パソコンを手にし、初めてネット掲示板で他人と交流する</dd>
-            <dt>2008</th>
-            <dd>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</dd>
-            <dt>2011</dt>
-            <dd>石川県に生まれ、現在も在住</dd>
-            <dt>2012</dt>
-            <dd>パソコンを手にし、初めてネット掲示板で他人と交流する</dd>
-            <dt>2014</th>
-            <dd>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</dd>
-            <dt>2021</th>
-            <dd>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</dd>
-            <dt>現在</th>
-            <dd>デジタルの楽譜のようなファイル形式であるMIDIを活用した音楽サービスやアプリを構想</dd>
-        </dl>
+        <table class="carrer">
+            <tr>
+                <td><span>1994</span></td>
+                <td>石川県に生まれ、現在も在住</td>
+            </tr>
+            <tr>
+                <td><span>2007</span></td>
+                <td>パソコンを手にし、初めてネット掲示板で他人と交流する</td>
+            </tr>
+            <tr>
+                <td><span>2008</span></td>
+                <td>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</td>
+            </tr>
+            <tr>
+                <td><span>2011</span></td>
+                <td>石川県に生まれ、現在も在住</td>
+            </tr>
+            <tr>
+                <td><span>2012</span></td>
+                <td>パソコンを手にし、初めてネット掲示板で他人と交流する</td>
+            </tr>
+            <tr>
+                <td><span>2014</span></td>
+                <td>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</td>
+            </tr>
+            <tr>
+                <td><span>2021</span></td>
+                <td>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</td>
+            </tr>
+            <tr>
+                <td><span>現在</span></td>
+                <td>デジタルの楽譜のようなファイル形式であるMIDIを活用した音楽サービスやアプリを構想</td>
+            </tr>
+        </table>
+    </div>
     </section>
 
     <!-- Page 02: Works -->
@@ -177,55 +196,74 @@
             </p>
         </div>
 
-        <ul class="works-area">
-            <li class="works-contents">
+        <ul class="works-list">
+            <!-- Works Area -->
+            <li class="works-box">
                 <img src="views/img_updated/works00_empty.png" alt="">
                 <div class="works-about">
-                    <div class="works-line"></div>
-                    <h4>AirPortfolio of Kohey Nishita</h4>
-                    <p>このページです。自己紹介を載せています。</p>
+                    <span class="line"></span>
+                    <div class="text">
+                        <h4>AirPortfolio of Kohey Nishita</h4>
+                        <p>このページです。自己紹介を載せています。</p>
+                    </div>
                 </div>
             </li>
-            <li class="works-contents">
+
+            <li class="works-box">
                 <img src="views/img_updated/works02.jpg" alt="">
                 <div class="works-about">
-                    <div class="works-line"></div>
-                    <h4>Twitter（クローン）</h4>
-                    <p>TECH I.S.のカリキュラムにて作成しました。</p>
+                    <span class="line"></span>
+                    <div class="text">
+                        <h4>Twitter（クローン）</h4>
+                        <p>TECH I.S.のカリキュラムにて作成しました。</p>
+                    </div>
                 </div>
             </li>
-            <li class="works-contents">
+
+            <li class="works-box">
                 <img src="views/img_updated/works00_empty.png" alt="">
                 <div class="works-about">
-                    <div class="works-line"></div>
-                    <h4>万華響（構想のみ）</h4>
-                    <p>MIDIビジュアライザーです</p>
+                    <span class="line"></span>
+                    <div class="text">
+                        <h4>万華響（構想のみ）</h4>
+                        <p>MIDIビジュアライザーです</p>
+                    </div>
                 </div>
             </li>
-            <li class="works-contents">
+
+            <li class="works-box">
                 <img src="views/img_updated/works00_empty.png" alt="">
                 <div class="works-about">
-                    <div class="works-line"></div>
-                    <h4>MIDI SNS（構想のみ）</h4>
-                    <p>誰でも簡単に作曲できるSNSです</p>
+                    <span class="line"></span>
+                    <div class="text">
+                        <h4>MIDI SNS（構想のみ）</h4>
+                        <p>誰でも簡単に作曲できるSNSです</p>
+                    </div>
                 </div>
             </li>
-            <li class="works-contents">
+
+            <li class="works-box">
                 <img src="views/img_updated/works05.jpg" alt="">
                 <div class="works-about">
-                    <div class="works-line"></div>
-                    <h4>水神鷲（制作中）</h4>
-                    <p>趣味としてUnity, C#で制作中のRPGです。</p>
+                    <span class="line"></span>
+                    <div class="text">
+                        <h4>水神鷲（制作中）</h4>
+                        <p>趣味としてUnity, C#で制作中のRPGです。</p>
+                    </div>
                 </div>
             </li>
-            <li class="works-contents">
+
+            <li class="works-box">
                 <img src="views/img_updated/works00_empty.png" alt="">
                 <div class="works-about">
-                    <div class="works-line"></div>
-                    <h4>作品がまだない</h4>
-                    <p>今後追加される予定です。</p>
+                    <span class="line"></span>
+                    <div class="text">
+                        <h4>作品がまだない</h4>
+                        <p>今後追加される予定です。</p>
+                    </div>
                 </div>
             </li>
+
         </ul>
     </section>
 
@@ -253,142 +291,169 @@
                 <li>5 : 実務で難なく使いこなせる</li>
             </ul>
 
-            <div class="graph">
-                <p>Programing<br>Languages</p>
-                <div class="graph-list">
-                    <ul>
-                        <li>
-                            <p>HTML</p>
-                            <div class="marks">
-                                <span class="pt1"></span>
-                                <span class="pt1"></span>
-                                <span class="pt1"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <p>CSS</p>
-                            <div class="marks">
-                                <span class="pt1"></span>
-                                <span class="pt1"></span>
-                                <span class="pt1"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <p> - Bootstrap</p>
-                            <div class="marks">
-                                <span class="pt1"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <p>JavaScript</p>
-                            <div class="marks">
-                                <span class="pt1"></span>
-                                <span class="pt1"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <p> - jQuery</p>
-                            <div class="marks">
-                                <span class="pt1"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <p>PHP</p>
-                            <div class="marks">
-                                <span class="pt1"></span>
-                                <span class="pt1"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <p>MySQL</p>
-                            <div class="marks">
-                                <span class="pt1"></span>
-                                <span class="pt1"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                                <span class="pt0"></span>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="skills-largebox">
+                <div class="graph">
+                    <p>Programing<br>Languages</p>
+                    <div class="graph-area">
+                        <table>
+                            <tr>
+                                <td class="td-right"><span>HTML</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-right"><span>CSS</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-right"><span> - Bootstrap</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-right"><span>JavaScript</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-right"><span> - jQuery</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-right"><span>PHP</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-right"><span>MySQL</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
 
                 <div class="graph">
                     <p>Others</p>
-                    <div class="graph-list">
-                        <ul>
-                            <li>
-                                <p>Illustrator</p>
-                                <div class="marks">
-                                    <span class="pt1"></span>
-                                    <span class="pt1"></span>
-                                    <span class="pt1"></span>
-                                    <span class="pt0"></span>
-                                    <span class="pt0"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <p>Photoshop</p>
-                                <div class="marks">
-                                    <span class="pt1"></span>
-                                    <span class="pt1"></span>
-                                    <span class="pt0"></span>
-                                    <span class="pt0"></span>
-                                    <span class="pt0"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <p>XD</p>
-                                <div class="marks">
-                                    <span class="pt1"></span>
-                                    <span class="pt1"></span>
-                                    <span class="pt0"></span>
-                                    <span class="pt0"></span>
-                                    <span class="pt0"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <p>Music Creation</p>
-                                <div class="marks">
-                                    <span class="pt1"></span>
-                                    <span class="pt1"></span>
-                                    <span class="pt1"></span>
-                                    <span class="pt0"></span>
-                                    <span class="pt0"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <p>Video Creation</p>
-                                <div class="marks">
-                                    <span class="pt1"></span>
-                                    <span class="pt1"></span>
-                                    <span class="pt0"></span>
-                                    <span class="pt0"></span>
-                                    <span class="pt0"></span>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="graph-area">
+                        <table>
+                            <tr>
+                                <td class="td-right"><span>Illustrator</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-right"><span>Photoshop</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-right"><span>XD</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            <tr>
+                                <td class="td-right"><span>Music Creation</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-right"><span>Video Creation</span></td>
+                                <td>
+                                    <div class="marks">
+                                        <span class="pt1"></span>
+                                        <span class="pt1"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                        <span class="pt0"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="comment">
             <div class="sub-index">
                 <div class="textbox">
                     <h2 class="ja">総評</h2>
@@ -417,16 +482,24 @@
         </div>
         <!-- Forms -->
         <div class="contact-area">
-            <dl>
-                <dt>名前 Name</dt>
-                <dd><input type="text" name="name" id="name" value=""></dd>
-                <dt></dt>メール Mail</dt>
-                <dd><input type="text" name="mail" id="mail" value=""></dd>
-                <dt>題名 Title</dt>
-                <dd><input type="text" name="title" id="title" value=""></dd>
-                <dt>本文 Comment</dt>
-                <dd><input type="text" name="comment" id="comment" value=""></dd>
-            </dl>
+            <table>
+                <tr>
+                    <td class="td-right"><span>名前 Name</td></span>
+                    <td><input type="text" name="name" id="name" value=""></td>
+                </tr>
+                <tr>
+                    <td class="td-right"><span>メール Mail</td></span>
+                    <td><input type="text" name="mail" id="mail" value=""></td>
+                </tr>
+                <tr>
+                    <td class="td-right"><span>題名 Title</td></span>
+                    <td><input type="text" name="title" id="title" value=""></td>
+                </tr>
+                <tr>
+                    <td class="td-right"><span>本文 Comment</td></span>
+                    <td><input type="text" name="comment" id="comment" value=""></dd>
+                </tr>
+            </table>
             <!-- Button -->
             <button type="submit" name="update" id="update" class="btn">
                 送信 Send

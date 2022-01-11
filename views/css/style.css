@@ -115,6 +115,11 @@ h1 {
     font-weight: 500;
 }
 
+/* Table */
+.td-right {
+    text-align: right;
+}
+
 /* Index */
 
 .index-area {
@@ -150,9 +155,9 @@ h1 {
 
 .main-index .index-line {
     width: 4px;
-    height: 64px;
+    height: 60px;
     background-color: #FFF;
-    margin: 3px 6px;
+    margin: 5px 6px;
 }
 
 .sub-index {
@@ -174,14 +179,14 @@ h1 {
     font-size: 19px;
     font-weight: 500;
     font-family: 'DIN-1451-Alt';
-    margin: -6px 2px 0 0;
+    margin: -7px 2px 0 0;
 }
 
 .sub-index .index-line {
     width: 4px;
     height: 48px;
     background-color: #FFF;
-    margin: 3px 7px;
+    margin: 2px 7px;
 }
 
 /* Header */
@@ -239,15 +244,13 @@ header {
 
 .profile {
     width: 80%;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .about-me {
     display: flex;
-    margin: 64px;
+    margin: 64px 0 auto;
 }
-
-.profile .main-index {}
 
 .profile p {
     font-size: 16px;
@@ -262,75 +265,82 @@ header {
 }
 
 .social-list {
-    display: block;
+    border: none;
+    margin: 0 auto;
 }
 
-.social-list li {
-    display: flex;
-    margin: 4px;
-}
+.social-list tr {}
 
-.social-list a {
+.social-list td a {
     font-size: 16px;
     font-weight: 500;
     font-family: 'DIN-1451-Alt';
     text-decoration: none;
+    text-align: right;
     color: #002E4E;
     background-color: white;
     height: fit-content;
-    padding: 3px 6px 1px;
-    margin: 0;
+    padding: 4px 6px 3px;
 }
 
-.social-list p {
+.social-list td span {
     font-size: 16px;
     width: fit-content;
+    display: flex;
+    margin: 2px 5px;
 }
 
 .carrer {
+    display: flex;
+    margin: 0;
+}
+
+.carrer tr {
     /* display: flex; */
-    justify-content: space-between;
-    align-items: center;
 }
 
-.carrer dt {
-    width: 20%;
-}
-
-.carrer dd {
-    width: 80%;
+.carrer td span {
+    font-weight: 400;
+    margin-right: 12px;
 }
 
 /* Page 02: Works */
 
 .works {}
 
-.works-area {}
+.works-list {}
 
-.works-contents {}
+.works-box {}
 
-.works-contents img {
+.works-box img {
     width: 30%;
-    border: 5px solid #FFF;
+    border: 4px solid #FFF;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .works-about {
     display: flex;
 }
 
-.works-about h4 {
-    font-weight: 500;
-}
-
-.works-line {
-    width: 5px;
+.works-about .line {
+    width: 4px;
     height: 62px;
     background-color: #FFF;
     margin: 0 63px;
 }
+
+.works-about .text {
+    text-align: left;
+}
+
+.works-about .text h4 {
+    font-weight: 400;
+}
+
+.works-about.text p {}
 
 /* Page 03: Skills */
 
@@ -342,20 +352,29 @@ header {
     display: flex;
 }
 
+.skills-largebox {
+    display: flex;
+}
+
 .graph {
     display: flex;
-    font-family: 'DIN-1451-Alt', 'Noto Sans JP';
+    font-family: 'DIN-1451-Alt';
+    font-size: 22px;
 }
 
-.graph-list {
+.graph p {}
+
+.graph-area {
     width: 420px;
     /* height: 100%; */
-    border: 5px solid #FFF;
+    border: 4px solid #FFF;
 }
 
-.graph-list ul {}
+.graph-area table {}
 
-.graph-list li {}
+.graph-area table tr {}
+
+.graph-area table td span {}
 
 .marks {
     display: flex;
@@ -374,25 +393,25 @@ header {
     box-sizing: border-box;
 }
 
+.comment {
+    display: flex;
+}
+
 /* Page 04: Contact */
 
 .contact {}
 
 .contact-area {}
 
-.contact-area dl {
-    /* align-items: right; */
+.contact-area table {}
+
+.contact-area table tr {
 }
 
-.contact-area dt {
-    display: flex;
+.contact-area table td span {
 }
 
-.contact-area dd {
-    display: flex;
-}
-
-.contact-area dd input {
+.contact-area table td input {
     width: 522px;
 }
 
