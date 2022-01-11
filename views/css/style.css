@@ -12,40 +12,47 @@ html {
 
 body {
     font-family: 'Noto Sans JP', 'メイリオ', 'Meiryo';
-    font-size: 24px;
     color: #FFF;
     box-sizing: border-box;
-    height: 100%;
+    min-width: 1076px;
     padding: 0;
     margin: 0;
-    background-color: #002E4E;
     background-image:
         url("../img/back_PC/00_PC.jpg"),
         url("../img/back_PC/01.jpg"),
         url("../img/back_PC/02.jpg"),
         url("../img/back_PC/03.jpg"),
         url("../img/back_PC/04.jpg");
+    background-size:
+        cover,
+        cover,
+        cover,
+        cover,
+        cover;
     background-position:
-        left,
-        0 calc(1080px * 1),
-        0 calc(1080px * 2),
-        0 calc(1080px * 3),
-        0 calc(1080px * 4);
+        center,
+        0 calc(100vh * 1),
+        0 calc(100vh * 2),
+        0 calc(100vh * 3),
+        0 calc(100vh * 4);
     background-repeat:
         no-repeat,
         no-repeat,
         no-repeat,
         no-repeat,
         no-repeat;
+    height:
+        100vh,
+        200vh,
+        300vh,
+        400vh,
+        500vh;
+    background-color: #002E4E;
+    background-color: rgba(0, 46, 78, 0.1);
+    background-blend-mode: darken;
 }
 
 /* Background */
-
-.background {
-    max-width: 1920px;
-}
-
-.back-sp-0-top {}
 
 .back-sp-1 {
     position: fixed;
@@ -53,30 +60,27 @@ body {
 
 /* Sideline Long */
 
-.sideline-long {
-    width: 5px;
+.sideline-long-left {
+    width: 3px;
     height: 100%;
     background-color: #FFF;
     position: fixed;
+    left: 10px;
 }
 
-.sideline-long-grp {
-    margin: 0 50px;
-}
-
-.sideline-long-grp .left {
-    float: left;
-}
-
-.sideline-long-grp .right {
-    float: right;
+.sideline-long-right {
+    width: 3px;
+    height: 100%;
+    background-color: #FFF;
+    position: fixed;
+    right: 10px;
 }
 
 /* Sideline Short */
 
 .sideline-short {
     width: 8px;
-    height: 86px;
+    height: 64px;
     background-color: #FFF;
 }
 
@@ -97,44 +101,14 @@ body {
     margin-top: 1080px;
 }
 
-/* Endline */
-
-.endline {
-    width: 12px;
-    height: 186px;
-    background-color: #FFF;
-    margin: 0 2px;
-}
-
-.endline-grp {}
-
-.endline-grp .left {
-    float: left;
-    margin-left: 61px;
-    display: flex;
-}
-
-.endline-grp .right {
-    float: right;
-    margin-right: 61px;
-    display: flex;
-}
-
 /* Parts */
 
-.contents {
-    width: 80%;
-    align-items: center;
-    margin: 0 122px;
-    padding-top: 86px;
+.color-kariyasu {
+    color: #FFED00;
 }
 
 li {
     list-style: none;
-}
-
-.color-kariyasu {
-    color: #FFED00;
 }
 
 h1 {
@@ -147,52 +121,67 @@ h1 {
     display: flex;
 }
 
+.index-area p {
+    font-size: 16px;
+}
+
 .main-index {
     display: flex;
 }
 
+.main-index .textbox {
+    display: block;
+    text-align: right;
+    margin: 0;
+}
+
 .main-index .ja {
-    font-size: 47px;
+    font-size: 36px;
     font-weight: 700;
-    height: 80%;
+    margin: 0;
 }
 
 .main-index .en {
-    font-size: 31px;
+    font-size: 24px;
     font-weight: 500;
     font-family: 'DIN-1451-Alt';
-    height: 20%;
+    margin: -4px 2px 0 0;
 }
 
 .main-index .index-line {
-    width: 6px;
-    height: 102px;
+    width: 4px;
+    height: 64px;
     background-color: #FFF;
+    margin: 3px 6px;
 }
 
 .sub-index {
     display: flex;
 }
 
+.sub-index .textbox {
+    display: block;
+    text-align: right;
+}
+
 .sub-index .ja {
-    font-size: 38px;
+    font-size: 27px;
     font-weight: 700;
+    margin: 0;
 }
 
 .sub-index .en {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 500;
     font-family: 'DIN-1451-Alt';
+    margin: -6px 2px 0 0;
 }
 
 .sub-index .index-line {
-    width: 5px;
-    height: 62px;
+    width: 4px;
+    height: 48px;
     background-color: #FFF;
-}
-
-.index-about {
-    font-size: 24px;
+    margin: 3px 7px;
 }
 
 /* Header */
@@ -200,60 +189,102 @@ h1 {
 header {
     width: 100%;
     position: fixed;
-}
-
-.header-area {
     background-color: #FFED00;
     display: flex;
-    height: 86px;
+    height: 64px;
+    text-align: center;
 }
 
 .header-logo {
-    width: 47px;
-    height: 86px;
-    margin-left: 63px;
+    height: 64px;
+    margin-left: 36px;
 }
 
 .header-list {
     display: flex;
-    color: #002E4E;
     justify-content: space-between;
     align-items: center;
+    margin: 12px 0 0 30px;
 }
 
 .header-list a {
     display: flex;
+    text-decoration: none;
+    margin-right: 36px;
 }
 
 .header-list dt {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 26px;
+    color: #002E4E;
 }
 
 .header-list dd {
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'DIN-1451-Alt';
+    color: #002E4E;
+    margin: auto 0 0 2px;
 }
 
 /* Page 00: Top Page */
 
-.title-img {
-    width: 623px;
-    height: 166px;
+.top {}
+
+.top img {
+    height: 124px;
+    margin: calc((100vh - 104px) / 2) 30px;
 }
 
 /* Page 01: Profile */
-.social-list {
-    display: flex;
+
+.profile {
+    width: 80%;
+    margin: 0;
 }
 
-.social-list dt {
+.about-me {
+    display: flex;
+    margin: 64px;
+}
+
+.profile .main-index {}
+
+.profile p {
+    font-size: 16px;
+    max-width: max-content;
+    width: 60%;
+    margin: 0px 30px 0 8px;
+}
+
+.profile img {
+    width: 15%;
+    border: 3px solid #fff;
+}
+
+.social-list {
+    display: block;
+}
+
+.social-list li {
+    display: flex;
+    margin: 4px;
+}
+
+.social-list a {
+    font-size: 16px;
     font-weight: 500;
     font-family: 'DIN-1451-Alt';
+    text-decoration: none;
+    color: #002E4E;
+    background-color: white;
+    height: fit-content;
+    padding: 3px 6px 1px;
+    margin: 0;
 }
 
-.social-list dd {
-    font-weight: 500;
+.social-list p {
+    font-size: 16px;
+    width: fit-content;
 }
 
 .carrer {
@@ -264,7 +295,6 @@ header {
 
 .carrer dt {
     width: 20%;
-    font-weight: 500;
 }
 
 .carrer dd {
@@ -272,6 +302,8 @@ header {
 }
 
 /* Page 02: Works */
+
+.works {}
 
 .works-area {}
 
@@ -301,6 +333,8 @@ header {
 }
 
 /* Page 03: Skills */
+
+.skills {}
 
 .skills-area {}
 
@@ -342,6 +376,8 @@ header {
 
 /* Page 04: Contact */
 
+.contact {}
+
 .contact-area {}
 
 .contact-area dl {
@@ -361,6 +397,27 @@ header {
 }
 
 .btn {}
+
+/* Endline */
+
+.endline {
+    width: 8px;
+    height: 136px;
+    background-color: #FFF;
+    margin: 0px 2px;
+}
+
+.endline-grp .left {
+    float: left;
+    margin-left: 16px;
+    display: flex;
+}
+
+.endline-grp .right {
+    float: right;
+    margin-right: 16px;
+    display: flex;
+}
 
 /* Footer */
 .footer-area {
