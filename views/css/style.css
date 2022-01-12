@@ -14,11 +14,11 @@ body {
     font-family: 'Noto Sans JP', 'メイリオ', 'Meiryo';
     color: #FFF;
     box-sizing: border-box;
+    width: 100%;
     min-width: 1076px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     background-image:
-        url("../img/back_PC/00_PC.jpg"),
         url("../img/back_PC/01.jpg"),
         url("../img/back_PC/02.jpg"),
         url("../img/back_PC/03.jpg"),
@@ -27,10 +27,8 @@ body {
         cover,
         cover,
         cover,
-        cover,
         cover;
     background-position:
-        center,
         0 calc(100vh * 1),
         0 calc(100vh * 2),
         0 calc(100vh * 3),
@@ -39,23 +37,15 @@ body {
         no-repeat,
         no-repeat,
         no-repeat,
-        no-repeat,
         no-repeat;
     height:
-        100vh,
         200vh,
         300vh,
         400vh,
         500vh;
-    background-color: #002E4E;
-    background-color: rgba(0, 46, 78, 0.1);
+    /* background-color: #002E4E; */
+    background-color: rgba(0, 46, 78, 0.3);
     background-blend-mode: darken;
-}
-
-/* Background */
-
-.back-sp-1 {
-    position: fixed;
 }
 
 /* Sideline Long */
@@ -92,13 +82,13 @@ body {
 .sideline-short-grp .left {
     float: left;
     margin-right: 5px;
-    margin-top: 1080px;
+    margin-top: 100vh;
 }
 
 .sideline-short-grp .right {
     float: right;
     margin-left: 5px;
-    margin-top: 1080px;
+    margin-top: 100vh;
 }
 
 /* Parts */
@@ -115,7 +105,21 @@ h1 {
     font-weight: 500;
 }
 
+.btn {
+    font-family: 'DIN-1451-Alt', 'Noto Sans JP';
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #002E4E;
+    background-color: white;
+    height: fit-content;
+    padding: 3px 7px 3px;
+    border: none;
+    border-radius: 0.1rem;
+}
+
 /* Table */
+
 .td-right {
     text-align: right;
 }
@@ -124,10 +128,13 @@ h1 {
 
 .index-area {
     display: flex;
+    margin: 0 auto;
 }
 
 .index-area p {
     font-size: 16px;
+    vertical-align: middle;
+    margin: auto 10px;
 }
 
 .main-index {
@@ -143,7 +150,7 @@ h1 {
 .main-index .ja {
     font-size: 36px;
     font-weight: 700;
-    margin: 0;
+    margin: 0 0 -7px 0;
 }
 
 .main-index .en {
@@ -155,9 +162,9 @@ h1 {
 
 .main-index .index-line {
     width: 4px;
-    height: 60px;
+    height: 62px;
     background-color: #FFF;
-    margin: 5px 6px;
+    margin: 9px 0 0 8px;
 }
 
 .sub-index {
@@ -186,7 +193,7 @@ h1 {
     width: 4px;
     height: 48px;
     background-color: #FFF;
-    margin: 2px 7px;
+    margin: 6px 7px;
 }
 
 /* Header */
@@ -231,89 +238,100 @@ header {
     margin: auto 0 0 2px;
 }
 
+/* Page Common Style */
+
+.page {
+    margin: 0 auto;
+    padding: 64px;
+}
+
 /* Page 00: Top Page */
 
-.top {}
+.top {
+    background-image:
+        url("../img/back_PC/00_PC.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
 .top img {
     height: 124px;
-    margin: calc((100vh - 104px) / 2) 30px;
+    margin: calc((100vh - 104px) / 2) 128px;
 }
 
 /* Page 01: Profile */
 
-.profile {
-    width: 80%;
-    /* margin: 0; */
+.prof-list {
+    border: none;
+    margin: 0 auto 64px auto;
 }
 
-.about-me {
-    display: flex;
-    margin: 64px 0 auto;
+.prof-list td {
+    vertical-align: top;
 }
 
-.profile p {
+.prof-list td .main-index {
+    margin: 0px;
+}
+
+.prof-list td .about-me {
+    margin: 6px 36px 24px 8px;
+    width: 512px;
+}
+
+.prof-list img {
+    width: 168px;
+    border: 3px solid #fff;
+    aspect-ratio: 1 / 1;
+}
+
+.prof-list td .about-social {
     font-size: 16px;
     max-width: max-content;
-    width: 60%;
-    margin: 0px 30px 0 8px;
-}
-
-.profile img {
-    width: 15%;
-    border: 3px solid #fff;
-}
-
-.social-list {
-    border: none;
-    margin: 0 auto;
-}
-
-.social-list tr {}
-
-.social-list td a {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'DIN-1451-Alt';
-    text-decoration: none;
-    text-align: right;
-    color: #002E4E;
-    background-color: white;
-    height: fit-content;
-    padding: 4px 6px 3px;
-}
-
-.social-list td span {
-    font-size: 16px;
-    width: fit-content;
-    display: flex;
-    margin: 2px 5px;
+    margin: 0px 0px 3px 7px;
 }
 
 .carrer {
     display: flex;
-    margin: 0;
+    margin: 0 auto;
 }
 
-.carrer tr {
-    /* display: flex; */
+.carrer-list {
 }
 
-.carrer td span {
+.carrer-list tr {}
+
+.carrer-list td span {
     font-weight: 400;
     margin-right: 12px;
 }
 
 /* Page 02: Works */
 
-.works {}
+.works {
+    margin: 0 auto;
+}
 
-.works-list {}
+.works-list {
+    display: flex;
+}
 
-.works-box {}
+.works-box {
+    max-width: 30%;
+    margin-right: 36px;
+}
+
+.works-box:last-child {
+    margin-right: 0;
+}
 
 .works-box img {
-    width: 30%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border: 4px solid #FFF;
     box-sizing: border-box;
     padding: 0;
@@ -323,13 +341,15 @@ header {
 
 .works-about {
     display: flex;
+    margin-top: 4px;
+    margin-bottom: 24px;
 }
 
 .works-about .line {
     width: 4px;
-    height: 62px;
+    height: 50px;
     background-color: #FFF;
-    margin: 0 63px;
+    margin: 2px 7px 0px 0;
 }
 
 .works-about .text {
@@ -337,14 +357,22 @@ header {
 }
 
 .works-about .text h4 {
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 1px;
 }
 
-.works-about.text p {}
+.works-about .text p {
+    margin: 0;
+    font-size: 16px;
+}
 
 /* Page 03: Skills */
 
-.skills {}
+.skills {
+    margin: 0 auto;
+}
 
 .skills-area {}
 
@@ -362,19 +390,27 @@ header {
     font-size: 22px;
 }
 
-.graph p {}
+.graph p {
+    text-align: right;
+    line-height: 28px;
+    margin: 0 9px 0 0;
+}
 
 .graph-area {
-    width: 420px;
-    /* height: 100%; */
+    width: 100%;
+    height: fit-content;
     border: 4px solid #FFF;
+    padding: 4px 12px;
+    margin: 0 36px 64px 0;
 }
 
 .graph-area table {}
 
 .graph-area table tr {}
 
-.graph-area table td span {}
+.graph-area table .td-right span {
+    margin-right: 8px;
+}
 
 .marks {
     display: flex;
@@ -382,15 +418,17 @@ header {
 
 .pt1 {
     width: 35px;
-    height: 20px;
+    height: 18px;
     background-color: #FFF;
+    margin: 0 -1px;
 }
 
 .pt0 {
     width: 35px;
-    height: 20px;
+    height: 18px;
     border: 2px solid #FFF;
     box-sizing: border-box;
+    margin: 0 -1px;
 }
 
 .comment {
@@ -399,23 +437,28 @@ header {
 
 /* Page 04: Contact */
 
-.contact {}
+.contact {
+    margin: 0 auto;
+}
 
 .contact-area {}
 
 .contact-area table {}
 
-.contact-area table tr {
-}
+.contact-area table tr {}
 
 .contact-area table td span {
+    margin-right: 6px;
 }
 
 .contact-area table td input {
-    width: 522px;
+    width: 360px;
+    height: 22px;
+    background-color: rgba(0, 46, 78, 0.3);
+    color: #fff;
+    border: 3px solid #fff;
+    margin-bottom: 3px;
 }
-
-.btn {}
 
 /* Endline */
 
@@ -428,13 +471,13 @@ header {
 
 .endline-grp .left {
     float: left;
-    margin-left: 16px;
+    margin-left: -66px;
     display: flex;
 }
 
 .endline-grp .right {
     float: right;
-    margin-right: 16px;
+    margin-right: -66px;
     display: flex;
 }
 
