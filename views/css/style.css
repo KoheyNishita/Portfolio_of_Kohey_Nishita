@@ -49,8 +49,7 @@ h1 {
     margin: 1px;
 }
 
-/* 
-btn:hover {
+/* .btn:hover {
     color: #fff;
     background-color: #FFED00;
 } */
@@ -179,10 +178,11 @@ header {
 
 .page {
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin: 0 auto;
-    /* padding: 64px 160px; */
+    padding: 64px 120px;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(0, 46, 78, 0.3);
     background-blend-mode: darken;
@@ -198,7 +198,7 @@ header {
 
 .top img {
     height: 124px;
-    margin: calc((100vh / 2) - 124px) 128px;
+    margin: calc(100vh / 2) 0;
 }
 
 /* Page 01: Profile */
@@ -210,7 +210,6 @@ header {
 .prof-list {
     border: none;
     margin: 0 auto 64px auto;
-    display: inline-block;
 }
 
 .prof-list td {
@@ -263,7 +262,7 @@ header {
 
 .works-box {
     max-width: 33%;
-    margin-right: 36px;
+    margin-right: 28px;
 }
 
 .works-box:last-child {
@@ -324,6 +323,15 @@ header {
     display: flex;
 }
 
+.skills-level li {
+    display: flex;
+    margin-right: 20px;
+}
+
+.skills-level li:last-child {
+    margin-right: 0;
+}
+
 .skills-largebox {
     display: flex;
 }
@@ -374,6 +382,12 @@ header {
 
 .comment {
     display: flex;
+    margin: 0 auto;
+}
+
+.comment p {
+    vertical-align: middle;
+    margin: auto 2px;
 }
 
 /* Page 04: Contact */
@@ -382,10 +396,12 @@ header {
     background-image: url("../img/back_PC/04.jpg");
 }
 
-.form-group {}
-
-.form-group .td-right span {
-    margin-right: 6px;
+.form-inline {
+    margin-bottom: 24px;
+}
+.form-group {
+    display: table;
+    margin: 0 auto;
 }
 
 .form-group .form-control {
@@ -394,13 +410,21 @@ header {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 0.1rem;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    overflow-wrap: normal;
+}
+
+.form-group:nth-last-child(2) .form-control {
+    height: 256px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.form-group:last-child {
 }
 
 /* Footer */
-.footer-area {
-    width: 80%;
-    height: 80px;
-    text-align: left;
-    margin: 0 0 51px 226px;
+footer {
+    margin: 0 auto;
+    height: 0;
 }
