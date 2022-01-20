@@ -261,11 +261,12 @@ nav {margin: 0 auto;justify-content: right;}
 .works-list {
     display: flex;
     margin-bottom: 24px;
+    justify-content: center;
 }
 
 .works-box {
-    max-width: 33%;
-    margin-right: 28px;
+    max-width: 31%;
+    margin-right: 10px;
 }
 
 .works-box:last-child {
@@ -302,7 +303,7 @@ nav {margin: 0 auto;justify-content: right;}
 }
 
 .works-about .text h4 {
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 500;
     margin: 0;
     margin-bottom: 1px;
@@ -326,6 +327,8 @@ nav {margin: 0 auto;justify-content: right;}
 
 .skills-level {
     display: flex;
+    margin-top: 36px;
+    margin-bottom: 24px;
 }
 
 .skills-level li {
@@ -338,7 +341,6 @@ nav {margin: 0 auto;justify-content: right;}
 }
 
 .skills-largebox {
-    display: flex;
     margin-bottom: 64px;
 }
 
@@ -346,7 +348,7 @@ nav {margin: 0 auto;justify-content: right;}
     display: flex;
     font-family: 'DIN-1451-Alt';
     font-size: 22px;
-    margin-right: 36px;
+    margin-right: 10px;
 }
 
 .graph:last-child {
@@ -361,6 +363,7 @@ nav {margin: 0 auto;justify-content: right;}
 
 .graph-area {
     width: 100%;
+    min-width: 320px;
     height: fit-content;
     border: 4px solid #FFF;
     border-radius: 0.1rem;
