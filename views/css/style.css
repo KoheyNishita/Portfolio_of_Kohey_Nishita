@@ -49,6 +49,11 @@ h1 {
     margin: 1px;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /* .btn:hover {
     color: #fff;
     background-color: #FFED00;
@@ -362,8 +367,8 @@ nav {margin: 0 auto;justify-content: right;}
 }
 
 .graph-area {
-    width: 100%;
-    min-width: 320px;
+    width: fit-content;
+    min-width: 316px;
     height: fit-content;
     border: 4px solid #FFF;
     border-radius: 0.1rem;
