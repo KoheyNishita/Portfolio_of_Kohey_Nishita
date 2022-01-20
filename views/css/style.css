@@ -57,7 +57,7 @@ h1 {
 /* Table */
 
 .td-right {
-    text-align: right;
+    /* text-align: right; */
 }
 
 /* Index */
@@ -262,6 +262,7 @@ nav {
 
 .works-list {
     display: flex;
+    margin-bottom: 24px;
 }
 
 .works-box {
@@ -289,7 +290,6 @@ nav {
 .works-about {
     display: flex;
     margin-top: 4px;
-    margin-bottom: 24px;
 }
 
 .works-about .line {
