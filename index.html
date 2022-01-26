@@ -17,13 +17,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"
         defer></script>
+    <!-- JavaScript Header -->
+    <script src="views/js/header.js" defer></script>
+
     <title>Portfolio of Kohey Nishita</title>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <img src="views/img/logo/logo_header_PC_4x_1.png" alt="" class="header-logo">
+    <header class="header js-header">
+        <a href="#"><img src="views/img/logo/logo_header_PC_4x_1.png" alt="" class="header-logo"></a>
         <nav>
             <dl class="header-list">
                 <a href="" class="">
@@ -53,6 +56,8 @@
     <!-- Page 00: Top Page -->
     <section class="page top">
         <img src="views/img/logo/top_title.png" alt="">
+        <p><span class="color-kariyasu">西</span>田浩平<br>
+            プログラマー / Programmer</p>
     </section>
 
     <!-- Page 01: Profile -->
@@ -81,19 +86,22 @@
                 </td>
             </tr>
             <tr>
-                <td class="td-right"><a href="" class="btn btn-primary">GitHub</a></td>
+                <td class="td-right"><a href="https://github.com/KoheyNishita" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">GitHub</a></td>
                 <td>
                     <p class="about-social">一部のWebページやアプリのソースコードを公開しています</p>
                 </td>
             </tr>
             <tr>
-                <td class="td-right"><a href="" class="btn btn-primary">Twitter</a></td>
+                <td class="td-right"><a href="https://twitter.com/KAI_EN_12L" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">Twitter</a></td>
                 <td>
                     <p class="about-social">プログラミング以外にも音楽やゲームのことも呟いています</p>
                 </td>
             </tr>
             <tr>
-                <td class="td-right"><a href="" class="btn btn-primary">SoundCloud</a></td>
+                <td class="td-right"><a href="https://soundcloud.com/liu-tofu-aveila" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-primary">SoundCloud</a></td>
                 <td>
                     <p class="about-social">自作曲を公開しています</p>
                 </td>
@@ -131,11 +139,12 @@
                 </tr>
                 <tr>
                     <td class="td-right"><span>2014</span></td>
-                    <td>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</td>
+                    <td>専門学校卒業後、印刷・運輸など様々な職を経験する</td>
                 </tr>
                 <tr>
                     <td class="td-right"><span>2021</span></td>
-                    <td>フラッシュゲームに興味を持ち、簡単なゲーム制作を始める</td>
+                    <td>学生時代から一貫していた「面白いものを作りたい」という思いが募り、<br>
+                        プログラミングでそれを実現しようとTECH I.S.に入校</td>
                 </tr>
                 <tr>
                     <td class="td-right"><span>現在</span></td>
@@ -155,9 +164,7 @@
                 </div>
                 <span class="index-line"></span>
             </div>
-            <p>
-                今のところは学習として作成したものや趣味の作品を主に掲載しています。
-            </p>
+            <p>学習として作成したものや趣味の作品を主に掲載しています。</p>
         </div>
 
         <!-- Works List 1 -->
@@ -299,7 +306,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="td-right"><span> - Bootstrap</span></td>
+                                <td class="td-right"><span>- Bootstrap</span></td>
                                 <td>
                                     <div class="marks">
                                         <span class="pt1"></span>
@@ -323,7 +330,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="td-right"><span> - jQuery</span></td>
+                                <td class="td-right"><span>- jQuery</span></td>
                                 <td>
                                     <div class="marks">
                                         <span class="pt1"></span>
@@ -454,7 +461,7 @@
                 <span class="index-line"></span>
             </div>
             <p>
-                私やこのサイトについてのコメントなどがありましたら、下記フォームをご利用ください。
+                私やこのサイトについてのコメントなどがありましたら、下記フォームをご利用ください。<br>
                 なお、全て必須項目となります。
             </p>
         </div>
@@ -482,7 +489,7 @@
         </form>
         <!-- Footer -->
         <footer>
-            &copy; 2021 西田浩平 Kohey Nishita
+            <div>&copy; 2021 西田浩平 Kohey Nishita</div>
         </footer>
     </section>
 </body>
