@@ -196,28 +196,39 @@ nav {
 .page {
     height: 100vh;
     margin: 0 auto;
-    padding: 64px 120px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(0, 46, 78, 0.3);
+    background-color: rgba(0, 46, 78, 0.1);
     background-blend-mode: darken;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    width: 85%;
+    padding-top: 56px;
 }
 
 /* Page 00: Top Page */
 
 .top {
     background-image: url("../img/back_PC/00_PC.jpg");
+    display: flow-root;
+    vertical-align: middle;
 }
 
-.top img {
+.top-contents {
+    display: block;
+    margin-top: calc(100vh /2 - 88px);
+}
+
+.top-contents img {
     height: 96px;
-    margin-top: calc(100vh /2 - 96px);
+
 }
 
-.top p {
+.top-contents p {
     font-size: 19px;
     font-weight: 500;
     line-height: 20px;
@@ -244,12 +255,12 @@ nav {
 }
 
 .prof-list td .about-me {
-    margin: 6px 36px 24px 8px;
+    margin: 6px 24px 24px 8px;
     width: 512px;
 }
 
 .prof-list img {
-    width: 160px;
+    width: 144px;
     border: 3px solid #fff;
     border-radius: 0.1rem;
     aspect-ratio: 1 / 1;
@@ -465,5 +476,28 @@ nav {
 
 /* Footer */
 footer {
-    margin: 0 auto;
+    background-color:#9b9b9b;
+    display: block;
+    padding: 0 28px;
+}
+
+.footer-container {
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container img {
+    height: 64px;
+}
+
+.footer-container img.left {}
+
+.footer-container img.right {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.footer-container p {
+    margin: 0 0 0 14px;
 }
