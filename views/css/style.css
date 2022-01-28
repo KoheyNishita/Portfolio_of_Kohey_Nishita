@@ -54,11 +54,6 @@ a {
     text-decoration: none;
 }
 
-/* .btn:hover {
-    color: #fff;
-    background-color: #FFED00;
-} */
-
 /* Table */
 
 .td-right {
@@ -199,7 +194,7 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(0, 46, 78, 0.1);
+    background-color: rgba(0, 46, 78, 0.2);
     background-blend-mode: darken;
     justify-content: center;
     align-items: center;
@@ -476,7 +471,7 @@ nav {
 
 /* Footer */
 footer {
-    background-color:#9b9b9b;
+    background-color: #51769e;
     display: block;
     padding: 0 28px;
 }
@@ -490,8 +485,6 @@ footer {
 .footer-container img {
     height: 64px;
 }
-
-.footer-container img.left {}
 
 .footer-container img.right {
     margin-right: 0;
