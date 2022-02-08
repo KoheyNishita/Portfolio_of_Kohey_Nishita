@@ -18,15 +18,31 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"
         defer></script>
     <!-- JavaScript Header -->
-    <script src="views/js/header.js" defer></script>
+    <script src="views/js/header_color.js" defer></script>
+    <script src="views/js/header_line.js" defer></script>
+    <script src="views/js/back_img.js" defer></script>
 
     <title>西田浩平 / Kohey Nishita</title>
 </head>
 
-<body>
+<body id="back-js">
     <!-- Header -->
-    <header class="header js-header">
-        <a href="#"><img src="views/img/logo/logo_header_PC_4x_1.png" alt="" class="header-logo"></a>
+    <header class="header">
+        <!-- Corner Line Left -->
+        <a href="#">
+            <div class="oblique-box">
+                <span class="oblique1"></span>
+                <span class="oblique2"></span>
+                <span class="oblique3"></span>
+            </div>
+            <div class="header-line-box">
+                <span class="corner-line"></span>
+                <span class="corner-line"></span>
+                <span class="corner-line"></span>
+                <span class="corner-line"></span>
+            </div>
+        </a>
+
         <nav>
             <dl class="header-list">
                 <a href="" class="">
@@ -51,6 +67,17 @@
                 </a>
             </dl>
         </nav>
+        <!-- Corner Line Right -->
+        <div class="header-line-box right" id="header-line-js">
+            <!-- <span class="corner-line" id="page1"></span>
+            <span class="corner-line" id="page2"></span>
+            <span class="corner-line" id="page3"></span>
+            <span class="corner-line" id="page4"></span> -->
+            <span class="corner-line"></span>
+            <span class="corner-line"></span>
+            <span class="corner-line"></span>
+            <span class="corner-line"></span>
+        </div>
     </header>
 
     <!-- Page 00: Top Page -->
@@ -479,23 +506,19 @@
             <!-- Forms -->
             <form action="" class="form-inline">
                 <div class="form-group col-5">
-                    <label for="name">名前 Name</label>
-                    <input type="text" class="form-control">
+                    <label for="name">名前</label>
+                    <input type="text" id="name" name="name" class="form-control">
                 </div>
                 <div class="form-group col-5">
-                    <label for="mail">メール Mail</label>
-                    <input type="text" class="form-control">
+                    <label for="mail">メール</label>
+                    <input type="email" id="email" name="email" class="form-control">
                 </div>
                 <div class="form-group col-5">
-                    <label for="title">題名 Title</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-5">
-                    <label for="comment">本文 Comment</label>
-                    <input type="text" class="form-control">
+                    <label for="comment">本文</label>
+                    <textarea id="message" name="message" class="form-control"></textarea>
                 </div>
                 <div class="form-group col-5 text-end">
-                    <button type="submit" name="update" id="update" class="btn btn-primary">送信 Send</button>
+                    <button type="submit" id="update" name="update" class="btn btn-primary">送信</button>
                 </div>
             </form>
         </div>
@@ -503,10 +526,19 @@
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <img src="views/img/logo/Logo_Header_PC_4x_2.png" alt="" class="left">
+            <div class="footer-line-box left">
+                <span class="corner-line"></span>
+                <span class="corner-line"></span>
+                <span class="corner-line"></span>
+                <span class="corner-line"></span>
+            </div>
             <p>&copy; 2021 西田浩平 Kohey Nishita</p>
-            <img src="views/img/logo/Logo_Header_PC_4x_2.png" alt="" class="right">
-        </div>
+            <div class="footer-line-box right">
+                <span class="corner-line"></span>
+                <span class="corner-line"></span>
+                <span class="corner-line"></span>
+                <span class="corner-line"></span>
+            </div>
     </footer>
 </body>
 

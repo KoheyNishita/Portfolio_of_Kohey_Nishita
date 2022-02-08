@@ -16,11 +16,21 @@ body {
     box-sizing: border-box;
     width: 100%;
     min-width: 1076px;
+    background-position: left;
     margin: 0 auto;
     padding: 0;
-    /* background-color: #002E4E; */
-    background-color: rgba(0, 46, 78, 0.3);
-    background-blend-mode: darken;
+    background-color: #002E4E;
+    /* background-color: rgba(0, 46, 78, 0.3); */
+    /* background-blend-mode: darken; */
+}
+
+#back-js {
+    background-image: url("../img/back/PC_01.jpg");
+    /* width: 100%; */
+    height: 100vh;
+    background-size: 550%;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 
 /* Parts */
@@ -140,26 +150,19 @@ a {
     width: 100%;
     height: 64px;
     background-color: #FFED00;
-    /* 近江刈安 */
     display: flex;
     text-align: center;
     position: fixed;
     padding: 0 28px;
 }
 
-.header.headerScroll {
-    background-color: rgba(0 0 0 0);
-    color: #fff;
-    border-bottom: 2px solid #fff;
+.header-logo {
+    height: 64px;
 }
 
 nav {
     margin: 0 auto;
     justify-content: right;
-}
-
-.header-logo {
-    height: 64px;
 }
 
 .header-list {
@@ -186,15 +189,76 @@ nav {
     margin: auto 0 0 2px;
 }
 
+/* Header - Corner Line & Logo */
+
+.corner-line {
+    width: 6px;
+    height: 64px;
+    background-color: #FFF;
+    margin: 0 2px;
+}
+
+.header-line-box {
+    display: flex;
+}
+
+.header-line-box-right {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* JS - Header Line */
+
+
+
+.oblique-box {
+    position: absolute;
+    display: flex;
+}
+
+.oblique1 {
+    transform: skewX(9deg);
+    width: 6px;
+    height: 64px;
+    margin-left: 7px;
+    background-color: #fff;
+}
+
+.oblique2 {
+    transform: skewX(-23deg);
+    width: 6px;
+    height: 24px;
+    margin-left: 14px;
+    background-color: #fff;
+}
+
+.oblique3 {
+    transform: skewX(14deg);
+    width: 6px;
+    height: 40px;
+    margin-left: -6px;
+    margin-top: 24px;
+    background-color: #fff;
+}
+
+/* Header JS */
+
+.headerScroll {
+    background-color: rgba(0 0 0 0);
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
 /* Page Common Style */
 
 .page {
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(0, 46, 78, 0.2);
+    /* background-color: rgba(0, 46, 78, 0.2); */
     background-blend-mode: darken;
     justify-content: center;
     align-items: center;
@@ -208,14 +272,14 @@ nav {
 /* Page 00: Top Page */
 
 .top {
-    background-image: url("../img/back_PC/00_PC.jpg");
+    background-image: url("../img/back/PC_00.jpg");
     display: flow-root;
     vertical-align: middle;
 }
 
 .top-contents {
     display: block;
-    margin-top: calc(100vh /2 - 88px);
+    margin-top: calc(100vh / 2 - 88px);
 }
 
 .top-contents img {
@@ -227,14 +291,15 @@ nav {
     font-size: 19px;
     font-weight: 500;
     line-height: 20px;
+    text-shadow: 1px 1px rgb(0 0 0 / 20%);
     margin: -17px 0 0 3px;
 }
 
 /* Page 01: Profile */
 
-.profile {
+/* .profile {
     background-image: url("../img/back_PC/01.jpg");
-}
+} */
 
 .prof-list {
     border: none;
@@ -282,9 +347,9 @@ nav {
 
 /* Page 02: Works */
 
-.works {
+/* .works {
     background-image: url("../img/back_PC/02.jpg");
-}
+} */
 
 .works-list {
     display: flex;
@@ -344,9 +409,9 @@ nav {
 
 /* Page 03: Skills */
 
-.skills {
+/* .skills {
     background-image: url("../img/back_PC/03.jpg");
-}
+} */
 
 .skills-area {
     display: grid;
@@ -438,9 +503,9 @@ nav {
 
 /* Page 04: Contact */
 
-.contact {
+/* .contact {
     background-image: url("../img/back_PC/04.jpg");
-}
+} */
 
 .form-inline {
     margin-bottom: 24px;
@@ -467,11 +532,9 @@ nav {
     vertical-align: top;
 }
 
-.form-group:last-child {}
-
 /* Footer */
 footer {
-    background-color: #51769e;
+    background-color: rgba(0, 0, 0, 0.2);
     display: block;
     padding: 0 28px;
 }
@@ -482,11 +545,11 @@ footer {
     align-items: center;
 }
 
-.footer-container img {
-    height: 64px;
+.footer-line-box {
+    display: flex;
 }
 
-.footer-container img.right {
+.footer-line-box.right {
     margin-right: 0;
     margin-left: auto;
 }
