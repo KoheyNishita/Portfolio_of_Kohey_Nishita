@@ -249,7 +249,16 @@ nav {
 .corner-line-js {
     background-color: #FFF;
     float: right;
+    /* position: relative; */
     margin-right: 28px;
+    visibility: hidden;
+}
+
+.fixedLine {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    visibility: initial;
 }
 
 #page1 {
@@ -273,12 +282,6 @@ nav {
     width: 6px;
     height: 64px;
     margin-right: 58px;
-}
-
-.fixedLine {
-    position: fixed;
-    top: 0px;
-    right: 0;
 }
 
 /* Page Common Style */
