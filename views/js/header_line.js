@@ -4,26 +4,35 @@
 
 // 1ページ分スクロールするごとに右上のヘッダーの線が1本増える
 
-$(window).on('scroll', function () {
-    var tmp = document.getElementsByClassName("header-line-box-right"); // cssからclassを取得
-    var scrollTop = $(window).scrollTop();
-    var bgPosition = scrollTop / 2; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
-    if (bgPosition) {
-        //付与するid名
-        var val = "page1";
-        //id属性追加
-        tmp[0].setAttribute("id", val);
-    }
+jQuery( function() {
+    var $offset1 = jQuery( '#page1' ).offset();
+    var $offset2 = jQuery( '#page2' ).offset();
+    var $offset3 = jQuery( '#page3' ).offset();
+    var $offset4 = jQuery( '#page4' ).offset();
 
+    jQuery( window ).scroll( function () {
+        if( jQuery( window ).scrollTop() > $offset1.top ) {
+            jQuery( '#page1' ).addClass( 'fixedLine' );
+        } else {
+            jQuery( '#page1' ).removeClass( 'fixedLine' );
+        }
 
-});
+        if( jQuery( window ).scrollTop() > $offset2.top ) {
+            jQuery( '#page2' ).addClass( 'fixedLine' );
+        } else {
+            jQuery( '#page2' ).removeClass( 'fixedLine' );
+        }
 
-// $(window).on('scroll', function () {
+        if( jQuery( window ).scrollTop() > $offset3.top ) {
+            jQuery( '#page3' ).addClass( 'fixedLine' );
+        } else {
+            jQuery( '#page3' ).removeClass( 'fixedLine' );
+        }
 
-//     var scrollTop = $(window).scrollTop();
-//     var bgPosition = scrollTop / 2; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
-
-//     if (bgPosition) {
-//         $('#header-line-js').css('background-position', 'center top -' + bgPosition + 'px');
-//     }
-// });
+        if( jQuery( window ).scrollTop() > $offset4.top ) {
+            jQuery( '#page4' ).addClass( 'fixedLine' );
+        } else {
+            jQuery( '#page4' ).removeClass( 'fixedLine' );
+        }
+    } );
+} );

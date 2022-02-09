@@ -20,8 +20,6 @@ body {
     margin: 0 auto;
     padding: 0;
     background-color: #002E4E;
-    /* background-color: rgba(0, 46, 78, 0.3); */
-    /* background-blend-mode: darken; */
 }
 
 #back-js {
@@ -189,7 +187,7 @@ nav {
     margin: auto 0 0 2px;
 }
 
-/* Header - Corner Line & Logo */
+/* Header - Corner Line */
 
 .corner-line {
     width: 6px;
@@ -203,13 +201,10 @@ nav {
 }
 
 .header-line-box-right {
+    display: flex;
     margin-right: 0;
     margin-left: auto;
 }
-
-/* JS - Header Line */
-
-
 
 .oblique-box {
     position: absolute;
@@ -241,12 +236,49 @@ nav {
     background-color: #fff;
 }
 
-/* Header JS */
+/* JS - Header Scroll */
 
 .headerScroll {
     background-color: rgba(0 0 0 0);
     color: #fff;
     border-bottom: 2px solid #fff;
+}
+
+/* JS - Header Line */
+
+.corner-line-js {
+    background-color: #FFF;
+    float: right;
+    margin-right: 28px;
+}
+
+#page1 {
+    width: 6px;
+    height: 64px;
+}
+
+#page2 {
+    width: 6px;
+    height: 64px;
+    margin-right: 38px;
+}
+
+#page3 {
+    width: 6px;
+    height: 64px;
+    margin-right: 48px;
+}
+
+#page4 {
+    width: 6px;
+    height: 64px;
+    margin-right: 58px;
+}
+
+.fixedLine {
+    position: fixed;
+    top: 0px;
+    right: 0;
 }
 
 /* Page Common Style */
@@ -258,8 +290,6 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-color: rgba(0, 46, 78, 0.2); */
-    background-blend-mode: darken;
     justify-content: center;
     align-items: center;
 }
@@ -296,10 +326,6 @@ nav {
 }
 
 /* Page 01: Profile */
-
-/* .profile {
-    background-image: url("../img/back_PC/01.jpg");
-} */
 
 .prof-list {
     border: none;
@@ -346,10 +372,6 @@ nav {
 }
 
 /* Page 02: Works */
-
-/* .works {
-    background-image: url("../img/back_PC/02.jpg");
-} */
 
 .works-list {
     display: flex;
@@ -408,10 +430,6 @@ nav {
 }
 
 /* Page 03: Skills */
-
-/* .skills {
-    background-image: url("../img/back_PC/03.jpg");
-} */
 
 .skills-area {
     display: grid;
@@ -502,10 +520,6 @@ nav {
 }
 
 /* Page 04: Contact */
-
-/* .contact {
-    background-image: url("../img/back_PC/04.jpg");
-} */
 
 .form-inline {
     margin-bottom: 24px;
