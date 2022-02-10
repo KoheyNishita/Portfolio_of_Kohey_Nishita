@@ -13,25 +13,25 @@ $(function () {
     var $offset4 = $('#page4').offset();
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > $offset1.top) {
+        if ($(window).scrollTop() > $offset1.top - 64) {
             $('#page1').addClass('fixedLine');
         } else {
             $('#page1').removeClass('fixedLine');
         }
 
-        if ($(window).scrollTop() > $offset2.top) {
+        if ($(window).scrollTop() > $offset2.top - 64) {
             $('#page2').addClass('fixedLine');
         } else {
             $('#page2').removeClass('fixedLine');
         }
 
-        if ($(window).scrollTop() > $offset3.top) {
+        if ($(window).scrollTop() > $offset3.top - 64) {
             $('#page3').addClass('fixedLine');
         } else {
             $('#page3').removeClass('fixedLine');
         }
 
-        if ($(window).scrollTop() > $offset4.top) {
+        if ($(window).scrollTop() > $offset4.top - 64) {
             $('#page4').addClass('fixedLine');
         } else {
             $('#page4').removeClass('fixedLine');
