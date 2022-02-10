@@ -2,37 +2,39 @@
 // Header - Add Line
 /////////////////////////////
 
+// jQuery
 // 1ページ分スクロールするごとに右上のヘッダーの線が1本増える
 
-jQuery( function() {
-    var $offset1 = jQuery( '#page1' ).offset();
-    var $offset2 = jQuery( '#page2' ).offset();
-    var $offset3 = jQuery( '#page3' ).offset();
-    var $offset4 = jQuery( '#page4' ).offset();
+$(function () {
+    // offsetは座標位置を取得する
+    var $offset1 = $('#page1').offset();
+    var $offset2 = $('#page2').offset();
+    var $offset3 = $('#page3').offset();
+    var $offset4 = $('#page4').offset();
 
-    jQuery( window ).scroll( function () {
-        if( jQuery( window ).scrollTop() > $offset1.top ) {
-            jQuery( '#page1' ).addClass( 'fixedLine' );
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > $offset1.top) {
+            $('#page1').addClass('fixedLine');
         } else {
-            jQuery( '#page1' ).removeClass( 'fixedLine' );
+            $('#page1').removeClass('fixedLine');
         }
 
-        if( jQuery( window ).scrollTop() > $offset2.top ) {
-            jQuery( '#page2' ).addClass( 'fixedLine' );
+        if ($(window).scrollTop() > $offset2.top) {
+            $('#page2').addClass('fixedLine');
         } else {
-            jQuery( '#page2' ).removeClass( 'fixedLine' );
+            $('#page2').removeClass('fixedLine');
         }
 
-        if( jQuery( window ).scrollTop() > $offset3.top ) {
-            jQuery( '#page3' ).addClass( 'fixedLine' );
+        if ($(window).scrollTop() > $offset3.top) {
+            $('#page3').addClass('fixedLine');
         } else {
-            jQuery( '#page3' ).removeClass( 'fixedLine' );
+            $('#page3').removeClass('fixedLine');
         }
 
-        if( jQuery( window ).scrollTop() > $offset4.top ) {
-            jQuery( '#page4' ).addClass( 'fixedLine' );
+        if ($(window).scrollTop() > $offset4.top) {
+            $('#page4').addClass('fixedLine');
         } else {
-            jQuery( '#page4' ).removeClass( 'fixedLine' );
+            $('#page4').removeClass('fixedLine');
         }
-    } );
-} );
+    });
+});

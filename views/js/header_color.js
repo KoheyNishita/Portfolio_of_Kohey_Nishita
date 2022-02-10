@@ -2,6 +2,7 @@
 // Header - Color Change
 /////////////////////////////
 
+// jQuery
 // 1ページ分スクロールしたらヘッダーの背景色が透明・文字色が白になる
 
 // if ('100vh' < jQuery(this).scrollTop()) {

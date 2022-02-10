@@ -252,25 +252,26 @@ nav {
 .corner-line-js {
     background-color: #FFF;
     float: right;
-    /* position: relative; */
     margin-right: 28px;
     visibility: hidden;
 }
 
 .fixedLine {
     position: fixed;
-    top: 0px;
+    top: 0;
     right: 0;
     visibility: initial;
+
     /* Animation */
-    animation-name: smoothAnime;
+    animation-name: jsMoveLine;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
+    /* animation-direction: reverse; */
     transform-origin: bottom;
     opacity: 0;
 }
 
-@keyframes smoothAnime {
+@keyframes jsMoveLine {
     from {
         transform: scaleY(0);
         opacity: 0;
