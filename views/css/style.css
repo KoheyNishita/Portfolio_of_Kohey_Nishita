@@ -150,12 +150,55 @@ a {
 .header {
     width: 100%;
     height: 64px;
-    background-color: #FFED00;
+    background-color: #ffed00;
     display: flex;
     text-align: center;
     position: fixed;
     padding: 0 28px;
 }
+
+/* .headerFadeOut {
+    animation-name: jsHeaderFadeOut;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+    opacity: 1;
+} */
+
+@keyframes jsHeaderFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.headerColorChanged {
+    background-color: rgba(0, 0, 0, 0.2);
+
+    /* Animation */
+    animation-name: jsHeaderFadeIn;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+    opacity: 1;
+}
+
+@keyframes jsHeaderFadeIn {
+    from {
+        /* transform: scaleY(0); */
+        opacity: 0;
+    }
+
+    to {
+        /* transform: scaleY(1); */
+        opacity: 1;
+    }
+}
+
+/* Header Contents */
 
 .header-logo {
     height: 64px;
@@ -177,16 +220,22 @@ nav {
     margin-right: 36px;
 }
 
+.header-list dt, dd {
+    color: #002E4E;
+}
+
+.headerTextChanged {
+    color: #fff;
+}
+
 .header-list dt {
     font-weight: 700;
     font-size: 26px;
-    color: #002E4E;
 }
 
 .header-list dd {
     font-size: 18px;
     font-family: 'DIN-1451-Alt';
-    color: #002E4E;
     margin: auto 0 0 2px;
 }
 
@@ -239,20 +288,13 @@ nav {
     background-color: #fff;
 }
 
-/* JS - Header Scroll */
-
-.headerScroll {
-    background-color: rgba(0 0 0 0);
-    color: #fff;
-    border-bottom: 2px solid #fff;
-}
-
 /* JS - Header Line */
 
 .corner-line-js {
     background-color: #FFF;
+    width: 6px;
+    height: 64px;
     float: right;
-    margin-right: 28px;
     visibility: hidden;
 }
 
@@ -275,32 +317,38 @@ nav {
         transform: scaleY(0);
         opacity: 0;
     }
+
     to {
         transform: scaleY(1);
         opacity: 1;
     }
 }
 
+@keyframes jsMoveLineRev {
+    from {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+}
+
 #page1 {
-    width: 6px;
-    height: 64px;
+    margin-right: 28px;
 }
 
 #page2 {
-    width: 6px;
-    height: 64px;
     margin-right: 38px;
 }
 
 #page3 {
-    width: 6px;
-    height: 64px;
     margin-right: 48px;
 }
 
 #page4 {
-    width: 6px;
-    height: 64px;
     margin-right: 58px;
 }
 
@@ -386,8 +434,6 @@ nav {
     justify-content: center;
     /* margin-left: 96px; */
 }
-
-.carrer-list {}
 
 .carrer-list td span {
     font-weight: 400;
