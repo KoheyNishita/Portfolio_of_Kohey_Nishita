@@ -88,6 +88,7 @@ a {
 
 .main-index {
     display: flex;
+    margin-top: 3px;
 }
 
 .main-index .textbox {
@@ -157,14 +158,6 @@ a {
     padding: 0 28px;
 }
 
-/* .headerFadeOut {
-    animation-name: jsHeaderFadeOut;
-    animation-duration: 1.7s;
-    animation-fill-mode: forwards;
-    transform-origin: top;
-    opacity: 1;
-} */
-
 @keyframes jsHeaderFadeOut {
     from {
         opacity: 1;
@@ -176,25 +169,23 @@ a {
 }
 
 .headerColorChanged {
-    background-color: rgba(0, 0, 0, 0.2);
-
     /* Animation */
     animation-name: jsHeaderFadeIn;
-    animation-duration: 1.7s;
+    animation-duration: 0.6s;
     animation-fill-mode: forwards;
-    transform-origin: top;
-    opacity: 1;
+}
+
+.headerTextChanged {
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 @keyframes jsHeaderFadeIn {
     from {
-        /* transform: scaleY(0); */
-        opacity: 0;
+        background-color: #ffed00;
     }
 
     to {
-        /* transform: scaleY(1); */
-        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -222,10 +213,6 @@ nav {
 
 .header-list dt, dd {
     color: #002E4E;
-}
-
-.headerTextChanged {
-    color: #fff;
 }
 
 .header-list dt {
@@ -400,7 +387,7 @@ nav {
 
 .prof-list {
     border: none;
-    margin: 0 auto 64px auto;
+    margin: 2px auto 64px auto;
 }
 
 .prof-list td {
@@ -432,7 +419,6 @@ nav {
 .carrer {
     display: flex;
     justify-content: center;
-    /* margin-left: 96px; */
 }
 
 .carrer-list td span {
@@ -618,7 +604,7 @@ nav {
 /* Footer */
 
 footer {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     display: block;
     padding: 0 28px;
     margin-top: -64px;
