@@ -8,13 +8,11 @@ $(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > $offset1.top - 64) {
             $('.header').addClass('headerColorChanged');
-            $('.header-list dt').addClass('headerTextChanged');
-            $('.header-list dd').addClass('headerTextChanged');
+            $('.header-list a').addClass('headerTextChanged');
 
         } else {
             $('.header').removeClass('headerColorChanged');
-            $('.header-list dt').removeClass('headerTextChanged');
-            $('.header-list dd').removeClass('headerTextChanged');
+            $('.header-list a').removeClass('headerTextChanged');
         }
     });
 });

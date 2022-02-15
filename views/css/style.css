@@ -180,6 +180,10 @@ a {
     text-shadow: 1px 1px rgb(0 0 0 / 50%);
 }
 
+.headerTextChanged:hover {
+    color: #ffed00 !important;
+}
+
 @keyframes jsHeaderFadeIn {
     from {
         background-color: #ffed00;
@@ -197,34 +201,24 @@ a {
 }
 
 nav {
-    margin: 0 auto;
+    margin: 10px auto 0;
     justify-content: right;
+    vertical-align: middle;
 }
 
 .header-list {
     display: flex;
-    margin: 12px 0 0 30px;
 }
 
 .header-list a {
-    display: flex;
-    text-decoration: none;
-    margin-right: 36px;
-}
-
-.header-list dt, dd {
-    color: #002E4E;
-}
-
-.header-list dt {
     font-weight: 700;
     font-size: 26px;
+    color: #002E4E;
+    margin-right: 56px;
 }
 
-.header-list dd {
-    font-size: 18px;
-    font-family: 'DIN-1451-Alt';
-    margin: auto 0 0 2px;
+.header-list a:hover {
+    color: #ffffff;
 }
 
 /* Header - Corner Line */
