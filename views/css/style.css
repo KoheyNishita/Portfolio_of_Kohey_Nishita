@@ -158,16 +158,6 @@ a {
     padding: 0 28px;
 }
 
-@keyframes jsHeaderFadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
 .headerColorChanged {
     /* Animation */
     animation-name: jsHeaderFadeIn;
@@ -177,7 +167,7 @@ a {
 
 .headerTextChanged {
     color: rgba(255, 255, 255, 0.8) !important;
-    text-shadow: 1px 1px rgb(0 0 0 / 50%);
+    text-shadow: 1px 1px rgba(24, 24, 24, 0.5);
 }
 
 .headerTextChanged:hover {
@@ -190,7 +180,17 @@ a {
     }
 
     to {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(24, 24, 24, 0.3);
+    }
+}
+
+@keyframes jsHeaderFadeOut {
+    from {
+        background-color: rgba(24, 24, 24, 0.3);
+    }
+
+    to {
+        background-color: #ffed00;
     }
 }
 
@@ -219,6 +219,7 @@ nav {
 
 .header-list a:hover {
     color: #ffffff;
+    text-shadow: 1px 1px rgba(24, 24, 24, 0.5);
 }
 
 /* Header - Corner Line */
@@ -599,7 +600,7 @@ nav {
 /* Footer */
 
 footer {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(24, 24, 24, 0.3);
     display: block;
     padding: 0 28px;
     margin-top: -64px;
