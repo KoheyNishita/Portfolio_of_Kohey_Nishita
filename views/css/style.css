@@ -282,26 +282,22 @@ nav {
     width: 6px;
     height: 64px;
     float: right;
-    visibility: hidden;
     /* Animation - Reverse */
     animation-name: jsMoveLineRev;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    transform-origin: top;
-    opacity: 1;
+    transform-origin: bottom;
 }
 
 .fixedLine {
     position: fixed;
     top: 0;
     right: 0;
-    visibility: initial;
     /* Animation */
     animation-name: jsMoveLine;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
     transform-origin: bottom;
-    opacity: 0;
 }
 
 @keyframes jsMoveLine {
