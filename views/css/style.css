@@ -37,7 +37,7 @@ body {
 /* Parts */
 
 .color-kariyasu {
-    color: #FFED00;
+    color: #ffed00;
 }
 
 li {
@@ -48,7 +48,7 @@ h1 {
     font-weight: 500;
 }
 
-.btn {
+.btn-primary {
     font-family: 'DIN-1451-Alt', 'Noto Sans JP';
     font-size: 18px;
     font-weight: 500;
@@ -58,6 +58,18 @@ h1 {
     border-radius: 0.1rem;
     padding: 1px 7px 0px 7px;
     margin: 1px;
+}
+
+.btn-primary:hover, .btn-primary:focus,
+.btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:active.focus,
+.btn-primary.active, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.active.focus,
+.open>.dropdown-toggle.btn-primary, .open>.dropdown-toggle.btn-primary:hover,
+.open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary.focus,
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
+    background: #ffed00;
+    color: #002E4E;
 }
 
 a {
