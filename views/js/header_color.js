@@ -9,7 +9,7 @@ $(function () {
     var $offset1 = $('#page1').offset();
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > $offset1.top - 64) {
+        if ($(window).scrollTop() > $offset1.top - 66) {
             $('.header').addClass('headerColorChanged');
             $('.header-list a').addClass('headerTextChanged');
 
