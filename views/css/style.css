@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'DIN-1451-Alt';
     src: url('../font/din1451alt.ttf') format('truetype');
-    src: url('../font/din1451alt_G.ttf') format('truetype');
+    src: url('../font/din1451alt_g.ttf') format('truetype');
 }
 
 html {
@@ -12,25 +12,23 @@ html {
 
 body {
     font-family: 'Noto Sans JP', 'メイリオ', 'Meiryo';
-    color: #FFF;
+    color: #fff;
     box-sizing: border-box;
     width: 100%;
     min-width: 1076px;
-    background-position: left;
     margin: 0 auto;
     padding: 0;
-    background-color: #002E4E;
+    background-color: #00416e;
 }
 
 /* JS - Back */
 
 #back-js {
-    background-image: url("../img/back/PC_01.jpg");
+    background-image: url("../img/back/pc_01.jpg");
     width: 100%;
     height: 100vh;
-    background-size: 200%;
+    background-size: 250%;
     left: 0;
-    background-position: left;
     background-repeat: no-repeat;
 }
 
@@ -52,12 +50,15 @@ h1 {
     font-family: 'DIN-1451-Alt', 'Noto Sans JP';
     font-size: 18px;
     font-weight: 500;
-    color: #002E4E;
-    background-color: white;
-    border: none;
+    color: #002e4e;
+    background-color: #fff;
     border-radius: 0.1rem;
-    padding: 1px 7px 0px 7px;
+    padding: 0 7px;
     margin: 1px;
+}
+
+.btn-outline-primary {
+    border: 1px solid #fff;
 }
 
 .btn-primary:hover, .btn-primary:focus,
@@ -68,13 +69,24 @@ h1 {
 .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover,
 .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
-    background: #ffed00;
-    color: #002E4E;
+    background-color: #002e4e;
+    border-color: #fff;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 a {
     color: #fff;
     text-decoration: none;
+}
+
+a:hover {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 /* Table */
@@ -125,7 +137,7 @@ a {
 .main-index .index-line {
     width: 4px;
     height: 62px;
-    background-color: #FFF;
+    background-color: #fff;
     margin: 5px 0 0px 6px;
 }
 
@@ -154,7 +166,7 @@ a {
 .sub-index .index-line {
     width: 4px;
     height: 48px;
-    background-color: #FFF;
+    background-color: #fff;
     margin: 2px 6px;
 }
 
@@ -229,12 +241,12 @@ nav {
 .header-list a {
     font-weight: 700;
     font-size: 26px;
-    color: #002E4E;
+    color: #002e4e;
     margin-right: 56px;
 }
 
 .header-list a:hover {
-    color: #ffffff;
+    color: #fff;
     text-shadow: 1px 1px rgba(24, 24, 24, 0.5);
 }
 
@@ -243,7 +255,7 @@ nav {
 .corner-line {
     width: 6px;
     height: 64px;
-    background-color: #FFF;
+    background-color: #fff;
     margin: 0 2px;
 }
 
@@ -290,7 +302,7 @@ nav {
 /* JS - Header Line */
 
 .corner-line-js {
-    background-color: #FFF;
+    background-color: #fff;
     width: 6px;
     height: 64px;
     float: right;
@@ -369,7 +381,7 @@ nav {
 /* Page 00: Top Page */
 
 .top {
-    background-image: url("../img/back/PC_00.jpg");
+    background-image: url("../img/back/pc_00.jpg");
     display: flow-root;
     vertical-align: middle;
 }
@@ -457,7 +469,7 @@ nav {
     height: auto;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    border: 4px solid #FFF;
+    border: 4px solid #fff;
     border-radius: 0.1rem;
     box-sizing: border-box;
     padding: 0;
@@ -473,7 +485,7 @@ nav {
 .works-about .line {
     width: 4px;
     height: 50px;
-    background-color: #FFF;
+    background-color: #fff;
     margin: 2px 7px 0px 0;
 }
 
@@ -540,7 +552,7 @@ nav {
     width: fit-content;
     min-width: 316px;
     height: fit-content;
-    border: 4px solid #FFF;
+    border: 4px solid #fff;
     border-radius: 0.1rem;
     padding: 4px 12px;
 }
@@ -560,14 +572,14 @@ nav {
 .pt1 {
     width: 35px;
     height: 18px;
-    background-color: #FFF;
+    background-color: #fff;
     margin: 0 -1px;
 }
 
 .pt0 {
     width: 35px;
     height: 18px;
-    border: 2px solid #FFF;
+    border: 2px solid #fff;
     box-sizing: border-box;
     margin: 0 -1px;
 }
