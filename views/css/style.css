@@ -27,7 +27,7 @@ body {
     background-image: url("../img/back/pc_01.jpg");
     width: 100%;
     height: 100vh;
-    background-size: 107%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -595,6 +595,10 @@ nav {
 }
 
 /* Page 04: Contact */
+
+.contact {
+    background-image: url("../img/back/pc_02.jpg");
+}
 
 .form-inline {
     margin-bottom: 24px;
