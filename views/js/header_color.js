@@ -6,7 +6,7 @@
 // 1ページ分だけスクロールしたらヘッダーが透明になる
 
 $(function () {
-    var $offset1 = $('#page1').offset();
+    var $offset1 = $('#page01').offset();
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > $offset1.top - 66) {
@@ -22,7 +22,7 @@ $(function () {
 
 // 逆再生
 $(function () {
-    var $offset1 = $('#page1').offset();
+    var $offset1 = $('#page01').offset();
 
     $(window).scroll(function () {
         if ($(window).scrollTop() < $offset1.top - 64) {

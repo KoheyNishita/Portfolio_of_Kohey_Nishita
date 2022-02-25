@@ -7,39 +7,39 @@
 
 $(function () {
     // offsetは座標位置を取得する
-    var $offset1 = $('#page1').offset();
-    var $offset2 = $('#page2').offset();
-    var $offset3 = $('#page3').offset();
-    var $offset4 = $('#page4').offset();
+    var $offset1 = $('#page01').offset();
+    var $offset2 = $('#page02').offset();
+    var $offset3 = $('#page03').offset();
+    var $offset4 = $('#page04').offset();
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > $offset1.top - 66) {
-            $('#page1').addClass('fixedLine');
+            $('#page01').addClass('fixedLine');
         } else {
-            $('#page1').removeClass('fixedLine');
-            $('#page1').css({'position':'fixed'});
+            $('#page01').removeClass('fixedLine');
+            $('#page01').css({'position':'fixed'});
 
         }
 
         if ($(window).scrollTop() > $offset2.top - 66) {
-            $('#page2').addClass('fixedLine');
+            $('#page02').addClass('fixedLine');
         } else {
-            $('#page2').removeClass('fixedLine');
-            $('#page2').css({'position':'fixed'});
+            $('#page02').removeClass('fixedLine');
+            $('#page02').css({'position':'fixed'});
         }
 
         if ($(window).scrollTop() > $offset3.top - 66) {
-            $('#page3').addClass('fixedLine');
+            $('#page03').addClass('fixedLine');
         } else {
-            $('#page3').removeClass('fixedLine');
-            $('#page3').css({'position':'fixed'});
+            $('#page03').removeClass('fixedLine');
+            $('#page03').css({'position':'fixed'});
         }
 
         if ($(window).scrollTop() > $offset4.top - 66) {
-            $('#page4').addClass('fixedLine');
+            $('#page04').addClass('fixedLine');
         } else {
-            $('#page4').removeClass('fixedLine');
-            $('#page4').css({'position':'fixed'});
+            $('#page04').removeClass('fixedLine');
+            $('#page04').css({'position':'fixed'});
         }
     });
 });
