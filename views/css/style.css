@@ -62,6 +62,10 @@ h1 {
     border: 1px solid #fff;
 }
 
+.btn-outline-secondary {
+    border: 1px solid #002e4e;
+}
+
 .btn-primary:hover, .btn-primary:focus,
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:active.focus,
 .btn-primary.active, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.active.focus,
@@ -70,38 +74,6 @@ h1 {
 .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover,
 .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
-    background-color: #002e4e;
-    border-color: #fff;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-
-.btn-secondary {
-    font-family: 'DIN-1451-Alt', 'Noto Sans JP';
-    font-size: 18px;
-    font-weight: 500;
-    color: #002e4e;
-    background-color: #fff;
-    border: 1px solid #002e4e;
-    border-radius: 0.1rem;
-    padding: 0 7px;
-    margin: 1px;
-}
-
-.btn-outline-secondary {
-    border: 1px solid #002e4e;
-}
-
-.btn-secondary:hover, .btn-secondary:focus,
-.btn-secondary:active, .btn-secondary:active:focus, .btn-secondary:active:hover, .btn-secondary:active.focus,
-.btn-secondary.active, .btn-secondary.active:focus, .btn-secondary.active:hover, .btn-secondary.active.focus,
-.open>.dropdown-toggle.btn-secondary, .open>.dropdown-toggle.btn-secondary:hover,
-.open>.dropdown-toggle.btn-secondary:focus, .open>.dropdown-toggle.btn-secondary.focus,
-.btn-secondary.disabled:hover, .btn-secondary[disabled]:hover, fieldset[disabled] .btn-secondary:hover,
-.btn-secondary.disabled:focus, .btn-secondary[disabled]:focus, fieldset[disabled] .btn-secondary:focus,
-.btn-secondary.disabled.focus, .btn-secondary[disabled].focus, fieldset[disabled] .btn-secondary.focus {
     background-color: #002e4e;
     border-color: #fff;
     -webkit-transition: all 0.2s ease;
@@ -569,6 +541,11 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
+}
+
+.modal__content img {
+    border: 0;
+    box-shadow: 0px 4px 5px 3px rgb(0 0 0 0.3);
 }
 
 .js-modal-close {
