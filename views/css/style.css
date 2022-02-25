@@ -507,7 +507,7 @@ nav {
 
 .works-about .text p {
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* Modal */
@@ -545,7 +545,7 @@ nav {
 
 .modal__content img {
     border: 0;
-    box-shadow: 0px 4px 5px 3px rgb(0 0 0 0.3);
+    box-shadow: 4px 4px 5px rgb(0 0 0 / 20%);
 }
 
 .js-modal-close {
