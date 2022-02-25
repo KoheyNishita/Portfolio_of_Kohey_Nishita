@@ -17,10 +17,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"
         defer></script>
-    <!-- JavaScript Header -->
+    <!-- JavaScript -->
     <script src="views/js/back_img.js" defer></script>
     <script src="views/js/header_color.js" defer></script>
     <script src="views/js/header_line.js" defer></script>
+    <script src="views/js/works_modal.js" defer></script>
 
     <title>西田浩平 / Kohey Nishita</title>
 </head>
@@ -199,15 +200,19 @@
                     <div class="works-about">
                         <span class="line"></span>
                         <div class="text">
-                            <h4><a href="js-modal-open" class="js-modal-open">Portfolio of Kohey Nishita</a></h4>
-                            <div class="modal js-modal">
+                            <!-- Modal Link -->
+                            <h4><a class="js-modal-open" href="" data-target="works01">Portfolio of Kohey Nishita</a></h4>
+
+                            <div class="modal js-modal" id="works01">
                                 <div class="modal__bg js-modal-close"></div>
+                                <!-- Modal Contents -->
                                 <div class="modal__content">
                                     <img src="views/img_uploaded/works_portfolio_of_kn_01.jpg" alt="">
-                                    <p>自己紹介を載せたページです。Worksなど随時更新中です</p>
-                                    <a href="" class="js-modal-close">Close</a>
-                                </div><!-- Modal__inner -->
-                            </div><!-- Modal -->
+                                    <p>自己紹介を載せたページです。Worksなど随時更新中です。</p>
+                                    <a href="" rel="noopener noreferrer" class="btn btn-primary btn-outline-primary js-modal-close">閉じる</a>
+                                </div>
+                            </div>
+                            <!-- About -->
                             <p>このページです。自己紹介を載せています。</p>
                         </div>
                     </div>
@@ -218,7 +223,19 @@
                     <div class="works-about">
                         <span class="line"></span>
                         <div class="text">
-                            <h4>Twitter クローン</h4>
+                            <!-- Modal Link -->
+                            <h4><a class="js-modal-open" href="" data-target="works02">Twitter クローン</a></h4>
+
+                            <div class="modal js-modal" id="works02">
+                                <div class="modal__bg js-modal-close"></div>
+                                <!-- Modal Contents -->
+                                <div class="modal__content">
+                                    <img src="views/img_uploaded/works_twitter_clone_01.jpg" alt="">
+                                    <p>TECH I.S.のカリキュラムにて作成しました。データ管理システムの基礎を学びました。</p>
+                                    <a href="" rel="noopener noreferrer" class="btn btn-primary btn-outline-primary js-modal-close">閉じる</a>
+                                </div>
+                            </div>
+                            <!-- About -->
                             <p>TECH I.S.のカリキュラムにて作成しました。</p>
                         </div>
                     </div>
@@ -229,7 +246,19 @@
                     <div class="works-about">
                         <span class="line"></span>
                         <div class="text">
-                            <h4>Apthumi（構想のみ）</h4>
+                            <!-- Modal Link -->
+                            <h4><a class="js-modal-open" href="" data-target="works03">Apthumi（構想のみ）</a></h4>
+
+                            <div class="modal js-modal" id="works03">
+                                <div class="modal__bg js-modal-close"></div>
+                                <!-- Modal Contents -->
+                                <div class="modal__content">
+                                    <img src="views/img_uploaded/works_apthumi_01.jpg" alt="">
+                                    <p>インターネットの普遍的な問題である誹謗中傷を失くすための一つの方法を実現するためのSNSです。</p>
+                                    <a href="" rel="noopener noreferrer" class="btn btn-primary btn-outline-primary js-modal-close">閉じる</a>
+                                </div>
+                            </div>
+                            <!-- About -->
                             <p>言葉ではなくメロディで繋がるSNSです。</p>
                         </div>
                     </div>
@@ -240,11 +269,23 @@
             <div class="works-list row">
 
                 <div class="works-box col">
-                    <img src="views/img_uploaded/works_00_empty.png" alt="">
+                    <img src="views/img_uploaded/works_00_empty_wh.png" alt="">
                     <div class="works-about">
                         <span class="line"></span>
                         <div class="text">
-                            <h4>万華響（構想のみ）</h4>
+                            <!-- Modal Link -->
+                            <h4><a class="js-modal-open" href="" data-target="works04">万華響（構想のみ）</a></h4>
+
+                            <div class="modal js-modal" id="works04">
+                                <div class="modal__bg js-modal-close"></div>
+                                <!-- Modal Contents -->
+                                <div class="modal__content">
+                                    <img src="views/img_uploaded/works_00_empty_bl.png" alt="">
+                                    <p>日本の伝統的な文様やモチーフを使ったMIDIビジュアライザーです。</p>
+                                    <a href="" rel="noopener noreferrer" class="btn btn-primary btn-outline-primary js-modal-close">閉じる</a>
+                                </div>
+                            </div>
+                            <!-- About -->
                             <p>MIDIビジュアライザーです。</p>
                         </div>
                     </div>
@@ -255,18 +296,45 @@
                     <div class="works-about">
                         <span class="line"></span>
                         <div class="text">
-                            <h4>水神鷲（制作中）</h4>
+                            <!-- Modal Link -->
+                            <h4><a class="js-modal-open" href="" data-target="works05">水神鷲（制作中）</a></h4>
+
+                            <div class="modal js-modal" id="works05">
+                                <div class="modal__bg js-modal-close"></div>
+                                <!-- Modal Contents -->
+                                <div class="modal__content">
+                                    <img src="views/img_uploaded/works_00_empty_bl.png" alt="">
+                                    <p>ローグライクという、少し変わったジャンルのRPGです。毎回レベル1からスタートし、
+                                        ダンジョンに入る度にアイテムやモンスターの配置、マップの形などが全てランダムに変わります。
+                                        運の要素が強いですが、プレイヤーには「今ある物をどう使って切り抜けるか」という思考力、発想力が
+                                    求められるの奥が深いゲーム。それこそがローグライクです。</p>
+                                    <a href="" rel="noopener noreferrer" class="btn btn-primary btn-outline-primary js-modal-close">閉じる</a>
+                                </div>
+                            </div>
+                            <!-- About -->
                             <p>趣味としてUnity, C#で制作中のRPGです。</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="works-box col">
-                    <img src="views/img_uploaded/works_00_empty.png" alt="">
+                    <img src="views/img_uploaded/works_00_empty_wh.png" alt="">
                     <div class="works-about">
                         <span class="line"></span>
                         <div class="text">
-                            <h4>作品がまだない</h4>
+                            <!-- Modal Link -->
+                            <h4><a class="js-modal-open" href="" data-target="works06">作品がまだない</a></h4>
+
+                            <div class="modal js-modal" id="works06">
+                                <div class="modal__bg js-modal-close"></div>
+                                <!-- Modal Contents -->
+                                <div class="modal__content">
+                                    <img src="views/img_uploaded/works_00_empty_bl.png" alt="">
+                                    <p>今後追加される予定です。</p>
+                                    <a href="" rel="noopener noreferrer" class="btn btn-primary btn-outline-primary js-modal-close">閉じる</a>
+                                </div>
+                            </div>
+                            <!-- About -->
                             <p>今後追加される予定です。</p>
                         </div>
                     </div>
@@ -514,7 +582,8 @@
                     <textarea id="message" name="message" class="form-control"></textarea>
                 </div>
                 <div class="form-group col-5 text-end">
-                    <button type="submit" id="update" name="update" class="btn btn-primary btn-outline-primary">送信</button>
+                    <button type="submit" id="update" name="update"
+                        class="btn btn-primary btn-outline-primary">送信</button>
                 </div>
             </form>
         </div>
