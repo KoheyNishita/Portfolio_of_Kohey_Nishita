@@ -480,6 +480,35 @@ nav {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    /* Aniamtion */
+    animation-name: worksImgFadeOut;
+    animation-duration: 0.3s;
+}
+
+.works-box img:hover {
+    border: 4px solid #ffed00;
+    animation-name: worksImgFadeIn;
+    /* animation-duration: 0.3s; */
+}
+
+@keyframes worksImgFadeIn {
+    from {
+        border: 4px solid #fff;
+    }
+
+    to {
+        border: 4px solid #ffed00;
+    }
+}
+
+@keyframes worksImgFadeOut {
+    from {
+        border: 4px solid #ffed00;
+    }
+
+    to {
+        border: 4px solid #fff;
+    }
 }
 
 .works-about {
@@ -533,7 +562,7 @@ nav {
 }
 
 .modal__content {
-    background: #f0f0f0;
+    background: #e8e8e8;
     color: #242424;
     left: 50%;
     padding: 40px;
@@ -544,12 +573,26 @@ nav {
 }
 
 .modal__content img {
-    border: 0;
-    box-shadow: 4px 4px 5px rgb(0 0 0 / 20%);
+    box-shadow: 4px 4px 6px rgb(0 0 0 / 40%);
+    border: none !important;
+    max-width: 950px;
+}
+
+.modal__content h4 {
+    text-align: center;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    color: #002e4e;
+    margin-bottom: 14px !important;
+}
+
+.modal__content p {
+    margin: 14px auto !important;
 }
 
 .js-modal-close {
-    color: #242424;
+    display: table;
+    margin: 0 auto;
 }
 
 /* Page 03: Skills */
@@ -672,6 +715,16 @@ nav {
     display: table-cell;
     vertical-align: top;
     overflow-wrap: break-word;
+}
+
+.text-end {
+    text-align: center !important;
+    margin: 8px auto;
+}
+
+.text-end .btn {
+    font-size: 20px;
+    padding: 2px 32px;
 }
 
 /* Footer */
