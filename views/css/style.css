@@ -488,7 +488,6 @@ nav {
 .works-box img:hover {
     border: 4px solid #ffed00;
     animation-name: worksImgFadeIn;
-    /* animation-duration: 0.3s; */
 }
 
 @keyframes worksImgFadeIn {
@@ -539,7 +538,7 @@ nav {
     font-size: 15px;
 }
 
-/* Modal */
+/* Works - Modal */
 
 .modal {
     display: none;
@@ -572,22 +571,23 @@ nav {
     width: 60%;
 }
 
-.modal__content img {
+.works-box .modal__content img {
+    border: none;
+    animation-name: none;
     box-shadow: 4px 4px 6px rgb(0 0 0 / 40%);
-    border: none !important;
     max-width: 950px;
 }
 
-.modal__content h4 {
+.works-box .modal__content h4 {
     text-align: center;
-    font-size: 26px !important;
-    font-weight: 700 !important;
+    font-size: 26px;
+    font-weight: 700;
     color: #002e4e;
-    margin-bottom: 14px !important;
+    margin-bottom: 14px;
 }
 
-.modal__content p {
-    margin: 14px auto !important;
+.works-box .modal__content p {
+    margin: 14px auto;
 }
 
 .js-modal-close {

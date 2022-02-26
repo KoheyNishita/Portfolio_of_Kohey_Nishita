@@ -3,7 +3,7 @@
 /////////////////////////////
 
 // jQuery
-// WorksのタイトルをクリックするとModalが開く
+// Worksのタイトルもしくは画像をクリックするとModalが開く
 
 $(function () {
     $('.js-modal-open').each(function () {
