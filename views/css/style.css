@@ -569,6 +569,7 @@ nav {
 }
 
 .modal__content {
+    text-align: center;
     background: #e8e8e8;
     color: #242424;
     left: 50%;
@@ -583,7 +584,7 @@ nav {
     border: none;
     animation-name: none;
     box-shadow: 4px 4px 6px rgb(0 0 0 / 40%);
-    max-width: 950px;
+    width: 560px;
 }
 
 .works-box .modal__content h4 {
