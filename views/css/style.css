@@ -620,6 +620,10 @@ nav {
     width: 72px;
 }
 
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .btn-carousel {
     width: 44px;
     height: 4px;
