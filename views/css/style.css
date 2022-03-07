@@ -577,14 +577,14 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
+    /* max-height: 90%; */
 }
 
 .works-box .modal__content img {
     border: none;
     animation-name: none;
     box-shadow: 4px 4px 6px rgb(0 0 0 / 40%);
-    /* aspect-ratio: initial; */
-    /* height: 64vh; */
+    height: 90%;
 }
 
 .works-box .modal__content h4 {
@@ -597,6 +597,7 @@ nav {
 
 .works-box .modal__content p {
     margin: 14px auto;
+    max-width: 640px;
 }
 
 .js-modal-close {
