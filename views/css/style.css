@@ -577,7 +577,7 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
-    /* max-height: 90%; */
+    max-height: 90%;
 }
 
 .works-box .modal__content img {
