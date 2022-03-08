@@ -584,7 +584,9 @@ nav {
     border: none;
     animation-name: none;
     box-shadow: 4px 4px 6px rgb(0 0 0 / 40%);
-    height: 90%;
+    max-width: 1080px;
+    height: auto;
+    540:;
 }
 
 .works-box .modal__content h4 {
@@ -597,7 +599,7 @@ nav {
 
 .works-box .modal__content p {
     margin: 14px auto;
-    max-width: 640px;
+    max-width: 800px;
 }
 
 .js-modal-close {
@@ -606,6 +608,10 @@ nav {
 }
 
 /* Works - Carousel */
+
+.carousel-item {
+    height: auto;
+}
 
 .carousel-control-prev-icon {
     background-image: url("../img/icon/carousel_prev.svg");
