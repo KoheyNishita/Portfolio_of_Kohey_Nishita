@@ -584,9 +584,8 @@ nav {
     border: none;
     animation-name: none;
     box-shadow: 4px 4px 6px rgb(0 0 0 / 40%);
-    max-width: 1080px;
     height: auto;
-    540:;
+    max-height: 540px;
 }
 
 .works-box .modal__content h4 {
