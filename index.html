@@ -45,21 +45,11 @@
         </a>
         <nav>
             <ul class="header-list">
-                <li>
-                    <a href="#">入口</a>
-                </li>
-                <li>
-                    <a href="#page01">自己紹介</a>
-                </li>
-                <li>
-                    <a href="#page02">作品</a>
-                </li>
-                <li>
-                    <a href="#page03">技能</a>
-                </li>
-                <li>
-                    <a href="#page04">連絡</a>
-                </li>
+                <li><a href="#">入口</a></li>
+                <li><a href="#profile">自己紹介</a></li>
+                <li><a href="#works">作品</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#contact">連絡</a></li>
             </ul>
         </nav>
     </header>
@@ -69,14 +59,13 @@
         <div class="container">
             <div class="top-contents">
                 <img src="views/img/icon/top_title.png" alt="">
-                <p><span class="color-kariyasu">西</span>田浩平<br>
-                    プログラマー / Programmer</p>
+                <p><span class="color-kariyasu">西</span>田浩平 / プログラマー</p>
             </div>
         </div>
     </section>
 
     <!-- Page 01: Profile -->
-    <section class="page profile">
+    <section class="page profile" id="profile">
         <!-- JS Header Line -->
         <span class="corner-line-js" id="page01"></span>
         <!-- Container -->
@@ -175,7 +164,7 @@
     </section>
 
     <!-- Page 02: Works -->
-    <section class="page works">
+    <section class="page works" id="works">
         <!-- JS Header Line -->
         <span class="corner-line-js" id="page02"></span>
         <!-- Container -->
@@ -196,7 +185,7 @@
                 <div class="works-box col">
                     <a class="js-modal-open" href="" data-target="works01">
                         <img src="views/img_uploaded/works01_portfolio_of_kn_01.jpg" alt="" href=""
-                            data-target="works01">
+                            data-target="works01" class="works-thumbnail">
                     </a>
                     <div class="works-about">
                         <span class="line"></span>
@@ -208,6 +197,9 @@
                                 <div class="modal__bg js-modal-close"></div>
                                 <!-- Modal Contents -->
                                 <div class="modal__content">
+                                    <a href="" rel="noopener noreferrer" class="js-modal-close">
+                                        <div class="btn-close"></div>
+                                    </a>
                                     <h4>Portfolio of Kohey Nishita</h4>
                                     <!-- Carousel -->
                                     <div id="works-carousel-01" class="carousel slide" data-bs-ride="carousel"
@@ -252,8 +244,6 @@
                                     <p>自己紹介を載せたページです。Worksなど随時更新中です。<br>
                                         使用言語およびツール：HTML/CSS, Bootstrap, JavaScript, jQuery, GIMP, InkScape<br>
                                     </p>
-                                    <a href="" rel="noopener noreferrer"
-                                        class="btn btn-primary btn-outline-secondary js-modal-close">閉じる</a>
                                 </div>
                             </div>
                             <!-- About -->
@@ -264,7 +254,7 @@
                 <!-- Works 02 -->
                 <div class="works-box col">
                     <a class="js-modal-open" href="" data-target="works02">
-                        <img src="views/img_uploaded/works02_twitter_clone_01.jpg" alt="">
+                        <img src="views/img_uploaded/works02_twitter_clone_01.jpg" alt="" class="works-thumbnail">
                     </a>
                     <div class="works-about">
                         <span class="line"></span>
@@ -326,7 +316,7 @@
                 <!-- Works 03 -->
                 <div class="works-box col">
                     <a class="js-modal-open" href="" data-target="works03">
-                        <img src="views/img_uploaded/works03_apthumi_01.jpg" alt="">
+                        <img src="views/img_uploaded/works03_apthumi_01.jpg" alt="" class="works-thumbnail">
                     </a>
                     <div class="works-about">
                         <span class="line"></span>
@@ -393,7 +383,7 @@
                 <!-- Works 04 -->
                 <div class="works-box col">
                     <a class="js-modal-open" href="" data-target="works04">
-                        <img src="views/img_uploaded/works00_empty_wh.png" alt="">
+                        <img src="views/img_uploaded/works00_empty_wh.png" alt="" class="works-thumbnail">
                     </a>
                     <div class="works-about">
                         <span class="line"></span>
@@ -456,7 +446,7 @@
                 <!-- Works 05 -->
                 <div class="works-box col">
                     <a class="js-modal-open" href="" data-target="works05">
-                        <img src="views/img_uploaded/works05_water_god_aquila_01.jpg" alt="">
+                        <img src="views/img_uploaded/works05_water_god_aquila_01.jpg" alt="" class="works-thumbnail">
                     </a>
                     <div class="works-about">
                         <span class="line"></span>
@@ -521,7 +511,7 @@
                 <!-- Works 06 -->
                 <div class="works-box col">
                     <a class="js-modal-open" href="" data-target="works06">
-                        <img src="views/img_uploaded/works00_empty_wh.png" alt="">
+                        <img src="views/img_uploaded/works00_empty_wh.png" alt="" class="works-thumbnail">
                     </a>
                     <div class="works-about">
                         <span class="line"></span>
@@ -585,7 +575,7 @@
     </section>
 
     <!-- Page 03: Skills -->
-    <section class="page skills">
+    <section class="page skills" id="skills">
         <!-- JS Header Line -->
         <span class="corner-line-js" id="page03"></span>
         <!-- Container -->
@@ -787,7 +777,7 @@
     </section>
 
     <!-- Page 04: Contact -->
-    <section class="page contact">
+    <section class="page contact" id="contact">
         <!-- JS Header Line -->
         <span class="corner-line-js" id="page04"></span>
         <!-- Contents -->
