@@ -90,6 +90,7 @@ h1 {
 .btn-close {
     /* width: 25px; */
     /* height: 25px; */
+    margin: -25px -300px 0 auto;
 }
 
 a {
@@ -392,7 +393,7 @@ nav {
 }
 
 .container {
-    width: 85%;
+    width: 90%;
     padding: 88px 0 64px;
 }
 
@@ -405,21 +406,21 @@ nav {
 }
 
 .top-contents {
+    width: fit-content;
     display: block;
-    margin-top: calc(100vh / 2 - 116px);
+    margin-top: calc(100vh / 2 - 120px);
 }
 
 .top-contents img {
     height: 96px;
-
 }
 
 .top-contents p {
     font-size: 19px;
     font-weight: 500;
-    line-height: 20px;
+    text-align: right;
     text-shadow: 1px 1px rgb(0 0 0 / 20%);
-    margin: -17px 0 0 3px;
+    margin: -28px 4px 0 0;
 }
 
 /* Page 01: Profile */
@@ -579,7 +580,6 @@ nav {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    max-height: 90%;
 }
 
 .works-box .modal__content .modal-header {
