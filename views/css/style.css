@@ -89,8 +89,9 @@ h1 {
 
 .btn-close {
     position: absolute;
+    top: 0;
     right: 0;
-    margin: -25px 15px 0 0;
+    margin: 10px;
 }
 
 a {
