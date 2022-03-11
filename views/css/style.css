@@ -88,9 +88,9 @@ h1 {
 }
 
 .btn-close {
-    /* width: 25px; */
-    /* height: 25px; */
-    margin: -25px -300px 0 auto;
+    position: absolute;
+    right: 0;
+    margin: -25px 15px 0 0;
 }
 
 a {
@@ -630,7 +630,7 @@ nav {
 .carousel-control-prev, .carousel-control-next {
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    width: 72px;
+    width: 56px;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
