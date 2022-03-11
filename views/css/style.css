@@ -630,7 +630,7 @@ nav {
 .carousel-control-prev, .carousel-control-next {
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    width: 56px;
+    width: 64px;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
