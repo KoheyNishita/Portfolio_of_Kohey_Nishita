@@ -48,10 +48,6 @@ li {
     list-style: none;
 }
 
-h1 {
-    font-weight: 500;
-}
-
 .btn-primary {
     font-family: 'DIN-1451-Alt', 'Noto Sans JP';
     font-size: 18px;
@@ -416,7 +412,7 @@ nav {
     height: 96px;
 }
 
-.top-contents p {
+h1 {
     font-size: 19px;
     font-weight: 500;
     text-align: right;
