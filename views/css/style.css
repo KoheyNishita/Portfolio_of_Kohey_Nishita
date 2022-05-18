@@ -605,6 +605,10 @@ h1 {
     max-width: 800px;
 }
 
+.works-box .modal__content .btn-outline-primary {
+    border: 1px solid #002e4e;
+}
+
 .js-modal-close {
     display: table;
     margin: 0 auto;
