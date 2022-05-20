@@ -420,50 +420,7 @@ h1 {
     margin: -28px 4px 0 0;
 }
 
-/* Page 01: Profile */
-
-.prof-list {
-    border: none;
-    margin: 2px auto 64px auto;
-}
-
-.prof-list td {
-    vertical-align: top;
-}
-
-.prof-list td .main-index {
-    margin: 0px;
-}
-
-.prof-list td .about-me {
-    margin: 0 24px 24px 8px;
-    width: 512px;
-}
-
-.prof-list img {
-    width: 144px;
-    border: 3px solid #fff;
-    border-radius: 0.1rem;
-    aspect-ratio: 1 / 1;
-}
-
-.prof-list td .about-social {
-    font-size: 16px;
-    max-width: max-content;
-    margin: 2px 0px 0px 8px;
-}
-
-.carrer {
-    display: flex;
-    justify-content: center;
-}
-
-.carrer-list td span {
-    font-weight: 400;
-    margin: 0 8px;
-}
-
-/* Page 02: Works */
+/* Page 01: Works */
 
 .works-list {
     display: flex;
@@ -651,7 +608,7 @@ h1 {
     opacity: 1;
 }
 
-/* Page 03: Skills */
+/* Page 02: Skills */
 
 .skills-area {
     display: grid;
@@ -739,6 +696,53 @@ h1 {
 .comment p {
     vertical-align: middle;
     margin: auto 0;
+}
+
+/* Page 03: Profile */
+
+.prof-list {
+    border: none;
+    margin: 2px auto 72px auto;
+}
+
+.prof-list td {
+    vertical-align: top;
+}
+
+.prof-list td .main-index {
+    margin: 0px;
+}
+
+.prof-list td .about-me {
+    margin: 0 24px 24px 8px;
+    width: 512px;
+}
+
+.prof-list img {
+    width: 144px;
+    border: 3px solid #fff;
+    border-radius: 0.1rem;
+    aspect-ratio: 1 / 1;
+}
+
+.prof-list td .about-social {
+    font-size: 16px;
+    max-width: max-content;
+    margin: 2px 0px 0px 8px;
+}
+
+.soundcloud-player {
+    margin-top: 12px;
+}
+
+.carrer {
+    display: flex;
+    justify-content: center;
+}
+
+.carrer-list td span {
+    font-weight: 400;
+    margin: 0 8px;
 }
 
 /* Page 04: Contact */
