@@ -32,7 +32,7 @@ body {
     background-image: url("../img/back/pc_01.jpg");
     width: 100%;
     height: 100vh;
-    background-size: 100%;
+    /* background-size: 100%; */
     background-repeat: no-repeat;
     position: relative;
     /* background-color: rgba(0, 0, 0, 0.8); */
@@ -380,7 +380,6 @@ nav {
 
 .page {
     width: 100%;
-    height: 100vh;
     margin: 0 auto;
     background-size: cover;
     background-position: center;
@@ -400,6 +399,7 @@ nav {
     background-image: url("../img/back/pc_00.jpg");
     display: flow-root;
     vertical-align: middle;
+    height: 100vh;
 }
 
 .top-contents {
@@ -749,6 +749,7 @@ h1 {
 
 .contact {
     background-image: url("../img/back/pc_02.jpg");
+    height: 100vh;
 }
 
 .form-inline {
