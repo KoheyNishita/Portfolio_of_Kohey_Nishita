@@ -390,7 +390,7 @@ nav {
 
 .container {
     width: 90%;
-    padding: 88px 0 64px;
+    padding: 88px 0;
 }
 
 /* Page 00: Top Page */
@@ -424,8 +424,12 @@ h1 {
 
 .works-list {
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     justify-content: center;
+}
+
+.works-list:last-child {
+    margin-bottom: 0;
 }
 
 .works-box {
@@ -482,13 +486,14 @@ h1 {
 
 .works-about .line {
     width: 4px;
-    height: 45px;
+    height: 32px;
     background-color: #fff;
     margin: 1px 7px 0px 0;
 }
 
 .works-about .text {
     text-align: left;
+    margin: auto 0;
 }
 
 .works-about .text h4 {
