@@ -41,7 +41,7 @@ $to = "5024kohy.nishi@gmail.com";
 $from = "xxxxxxxxxx@xxx.xxx";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
-$Email = "email";
+$Email = "Email";
 //---------------------------　必須設定　ここまで　------------------------------------
 
 
