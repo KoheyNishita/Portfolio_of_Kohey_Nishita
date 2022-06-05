@@ -83,6 +83,16 @@ li {
     transition: all 0.2s ease;
 }
 
+.btn-box {}
+
+.btn-box .btn {
+    margin-right: 4px;
+}
+
+.btn-box .btn:last-child {
+    margin-right: 0;
+}
+
 .btn-close {
     position: absolute;
     top: 0;
@@ -513,9 +523,9 @@ h1 {
 .works-box .modal {
     display: none;
     height: 100vh;
+    width: 100%;
     position: fixed;
     top: 0;
-    width: 100%;
 }
 
 .works-box .js-modal-open:hover {
@@ -743,6 +753,10 @@ h1 {
 .carrer {
     display: flex;
     justify-content: center;
+}
+
+.carrer-list {
+    max-width: 600px;
 }
 
 .carrer-list td span {
