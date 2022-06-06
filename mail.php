@@ -328,8 +328,8 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 		<div id="formWrap">
 			<?php if ($empty_flag == 1) { ?>
 				<div class="confirm-container">
-					<h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
-					<?php echo $errm; ?><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()" class="btn btn-primary btn-outline-primary" #>
+					<h4>入力にエラーがあります。下記をご確認のうえ「前画面に戻る」ボタンにて修正をお願いします。</h4>
+					<?php echo $errm; ?><br /><br /><input type="button" value="前画面に戻る" onClick="history.back()" class="btn btn-primary btn-outline-primary" #>
 				</div>
 			<?php } else { ?>
 				<div class="confirm-container">
