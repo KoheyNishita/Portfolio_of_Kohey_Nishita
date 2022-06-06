@@ -303,7 +303,9 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 				table.formTable th,
 				table.formTable td {
 					width: auto;
+					max-width: 600px;
 					display: block;
+					overflow-wrap: break-word;
 				}
 
 				table.formTable th {
