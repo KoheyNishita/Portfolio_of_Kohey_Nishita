@@ -342,8 +342,10 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 						</table>
 						<p><input type="hidden" name="mail_set" value="confirm_submit">
 							<input type="hidden" name="httpReferer" value="<?php echo h($_SERVER['HTTP_REFERER']); ?>">
+						<div class="btn-box">
 							<input type="button" value="前画面に戻る" onClick="history.back()" class="btn btn-primary btn-outline-primary">
 							<input type="submit" value="送信する" class="btn btn-primary btn-outline-primary">
+						</div>
 						</p>
 					</form>
 				</div>
