@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'DIN-1451-Alt';
-    src: url('../font/din1451alt.ttf') format('truetype');
-    src: url('../font/din1451alt_g.ttf') format('truetype');
+    src: url('../font/din1451alt.woff') format('woff');
+    src: url('../font/din1451alt_G.woff') format('woff');
 }
 
 @font-face {
