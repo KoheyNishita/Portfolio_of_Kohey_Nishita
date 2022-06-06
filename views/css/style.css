@@ -834,3 +834,16 @@ footer {
 .footer-container p {
     margin: 0 0 0 14px;
 }
+
+/* Contact Confirm Page */
+
+.confirm-container {
+    text-align: center;
+    margin-top: 64px;
+}
+
+h3 {
+    font-family: 'Kaisotai';
+    font-size: 36px;
+    font-weight: 700;
+}
