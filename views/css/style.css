@@ -846,4 +846,9 @@ h3 {
     font-family: 'Kaisotai';
     font-size: 36px;
     font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.text-confirm {
+    font-size: 16px;
 }

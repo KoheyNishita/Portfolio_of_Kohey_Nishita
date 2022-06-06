@@ -262,12 +262,6 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 		<style type="text/css">
 			@charset "UTF-8";
 
-			h3 {
-				font-family: 'Kaisotai';
-				font-size: 36px;
-				font-weight: 700;
-			}
-
 			#formWrap {
 				width: 700px;
 				margin: 64px auto;
@@ -338,7 +332,7 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 			<?php } else { ?>
 				<div class="confirm-container">
 					<h3><span class="color-kariyasu">確</span>認画面</h3>
-					<p>以下の内容で間違いがなければ、「送信する」ボタンを押してください。</p>
+					<p class="text-confirm">以下の内容で間違いがなければ、「送信する」ボタンを押してください。</p>
 					<form action="<?php echo h($_SERVER['SCRIPT_NAME']); ?>" method="POST">
 						<table class="formTable">
 							<?php echo confirmOutput($_POST); //入力内容を表示
