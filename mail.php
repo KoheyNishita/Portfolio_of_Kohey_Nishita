@@ -41,7 +41,7 @@ $to = "5024kohy.nishi@gmail.com";
 $from = "5024kohy.nishi@gmail.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
-$Email = "Email";
+$Email = "メール";
 //---------------------------　必須設定　ここまで　------------------------------------
 
 
@@ -290,7 +290,7 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 
 			p.error_messe {
 				margin: 5px 0;
-				color: red;
+				color: #ffed00;
 			}
 
 			/* 簡易版レスポンシブ用CSS */
@@ -342,8 +342,8 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
 						</table>
 						<p><input type="hidden" name="mail_set" value="confirm_submit">
 							<input type="hidden" name="httpReferer" value="<?php echo h($_SERVER['HTTP_REFERER']); ?>">
-							<input type="submit" value="　送信する　" class="btn btn-primary btn-outline-primary">
 							<input type="button" value="前画面に戻る" onClick="history.back()" class="btn btn-primary btn-outline-primary">
+							<input type="submit" value="送信する" class="btn btn-primary btn-outline-primary">
 						</p>
 					</form>
 				</div>
