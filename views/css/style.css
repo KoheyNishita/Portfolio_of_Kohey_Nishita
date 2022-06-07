@@ -820,9 +820,12 @@ h1 {
     text-align: center;
 }
 
+.twitter-list .td-right {
+    text-align: left;
+}
+
 .twitter-list td span {
     margin-right: 14px;
-    text-align: left;
 }
 
 .twitter-list tr td img {
