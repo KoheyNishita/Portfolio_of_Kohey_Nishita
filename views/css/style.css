@@ -83,7 +83,9 @@ li {
     transition: all 0.2s ease;
 }
 
-.btn-box {}
+.btn-box {
+    text-align: center;
+}
 
 .btn-box .btn {
     margin-right: 4px;
@@ -734,7 +736,7 @@ h1 {
 }
 
 .prof-list img {
-    width: 144px;
+    width: 150px;
     border: 3px solid #fff;
     border-radius: 0.1rem;
     aspect-ratio: 1 / 1;
@@ -807,6 +809,28 @@ h1 {
     padding: 0 32px;
 }
 
+.twitter-list {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 64px auto 16px;
+    padding: 16px;
+    width: fit-content;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.twitter-list td span {
+    margin-right: 14px;
+    text-align: left;
+}
+
+.twitter-list tr td img {
+    width: 150px;
+    margin: 14px auto;
+    border: 1px solid #fff;
+}
+
 /* Footer */
 
 footer {
@@ -832,7 +856,7 @@ footer {
 }
 
 .footer-container p {
-    margin: 0 0 0 14px;
+    margin: 14px;
 }
 
 /* Contact Confirm Page */
