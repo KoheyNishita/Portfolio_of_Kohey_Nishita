@@ -151,6 +151,19 @@ a:hover {
     .btn-box .btn {
         margin-right: 16px;
     }
+
+    .btn-close {
+        background-image: url(../img/icon/btn-close.svg);
+        background-size: 44px;
+        width: 44px;
+        height: 44px;
+        left: 0;
+        margin: 24px;
+    }
+
+    .btn-close:hover {
+        filter: brightness(50%);
+    }
 }
 
 /* Table */
@@ -1048,6 +1061,18 @@ h1 {
         max-width: max-content;
         margin: 2px 0px 0px 16px;
     }
+
+    .soundcloud-player {
+        margin: 48px 0;
+    }
+
+    .carrer-list {
+        font-size: 32px;
+    }
+
+    .carrer-list td span {
+        margin: 0 12px;
+    }
 }
 
 /* Page 04: Contact */
@@ -1127,6 +1152,7 @@ h1 {
         font-size: 40px;
         border: 4px solid #fff;
         padding: 36px;
+        margin: 88px auto;
     }
 
     .twitter-list tr td img {
