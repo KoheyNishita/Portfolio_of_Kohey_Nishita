@@ -397,12 +397,12 @@ nav {
     }
 
     .header-list li {
-        margin-right: 48px;
+        margin-right: 36px;
     }
 
     .header-list a {
         font-weight: 700;
-        font-size: 64px;
+        font-size: 72px;
         color: #002e4e;
     }
 }
