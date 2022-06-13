@@ -269,6 +269,7 @@ a:hover {
 
     .main-index .en {
         font-size: 44px;
+        margin-right: 8px;
     }
 
     .main-index .index-line {
@@ -590,6 +591,21 @@ h1 {
     text-align: right;
     text-shadow: 1px 1px rgb(0 0 0 / 20%);
     margin: -28px 4px 0 0;
+}
+
+@media screen and (max-width: 479px) {
+    .top-contents {
+        margin-top: calc(100vh / 2 - 300px);
+    }
+
+    .top-contents img {
+        height: 160px;
+        margin-bottom: -16px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
 }
 
 /* Page 01: Works */
@@ -1042,27 +1058,50 @@ h1 {
 }
 
 @media screen and (max-width: 479px) {
-
-    .prof-list td .main-index .ja {
-        width: 160px;
+    .sp-index-area-prof {
+        display: initial;
+        margin: 0 auto;
     }
 
-    .prof-list td .about-me {
-        font-size: 36px;
+    .sp-index-area-prof .sp-large-index {
+        display: flex;
     }
 
-    .prof-list td .about-social {
-        font-size: 36px;
+    .sp-index-area-prof .sp-main-index {
+        margin: 0 auto;
+    }
+
+    .sp-index-area-prof .about-me {
+        font-size: 40px;
+        margin: 0 auto;
+        width: 920px;
+    }
+
+    .social-list .td-left .btn-primary {
+        margin-bottom: 24px;
+    }
+
+    .sp-icon {
+        width: 360px;
+        display: block;
+        text-align: center;
+        margin: 64px auto;
+        border: 8px solid #fff;
+    }
+
+    .social-list td p {
+        font-size: 32px;
         max-width: max-content;
-        margin: 2px 0px 0px 16px;
+        margin: -24px 0 0 16px;
     }
 
-    .soundcloud-player {
-        margin: 48px 0;
+    .container .soundcloud-player {
+        margin: 0 auto 120px;
     }
 
     .carrer-list {
         font-size: 32px;
+        max-width: 720px;
     }
 
     .carrer-list td span {
@@ -1132,10 +1171,8 @@ h1 {
     margin-right: 14px;
 }
 
-.twitter-list tr td img {
-    width: 150px;
-    margin: 14px auto;
-    border: 1px solid #fff;
+.twitter-list .icon {
+    margin: 16px;
 }
 
 @media screen and (max-width: 479px) {
@@ -1150,9 +1187,8 @@ h1 {
         margin: 88px auto;
     }
 
-    .twitter-list tr td img {
-        width: 380px;
-        margin: 32px auto;
+    .twitter-list .sp-icon {
+        margin: 36px auto;
     }
 }
 
