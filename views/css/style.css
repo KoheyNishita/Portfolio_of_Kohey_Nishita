@@ -362,13 +362,24 @@ nav {
 
 .header-list {
     display: flex;
+    font-weight: 700;
+    font-size: 30px;
+    color: #002e4e;
+    margin-bottom: 0;
+}
+
+.header-list li {
+    margin-right: 72px;
+}
+
+.header-list li:last-child {
+    margin-right: 0;
 }
 
 .header-list a {
     font-weight: 700;
     font-size: 30px;
     color: #002e4e;
-    margin-right: 72px;
 }
 
 .header-list a:hover {
@@ -377,8 +388,22 @@ nav {
 }
 
 @media screen and (max-width: 479px) {
+    nav {
+        margin: auto 0;
+    }
+
     .header {
         height: 120px;
+    }
+
+    .header-list li {
+        margin-right: 48px;
+    }
+
+    .header-list a {
+        font-weight: 700;
+        font-size: 64px;
+        color: #002e4e;
     }
 }
 
@@ -595,16 +620,18 @@ h1 {
 
 @media screen and (max-width: 479px) {
     .top-contents {
-        margin-top: calc(100vh / 2 - 300px);
+        margin-top: calc(100vh / 2 - 128px);
+        margin-left: 0;
     }
 
     .top-contents img {
-        height: 160px;
-        margin-bottom: -16px;
+        height: 108px;
+        margin-bottom: 16px;
     }
 
     h1 {
         font-size: 36px;
+        text-align: left;
     }
 }
 
