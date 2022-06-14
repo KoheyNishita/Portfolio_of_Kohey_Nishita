@@ -10,11 +10,11 @@ $(function () {
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > $offset1.top - 66) {
-            $('.header').addClass('headerColorChanged');
+            $('header').addClass('headerColorChanged');
             $('.header-list a').addClass('headerTextChanged');
 
         } else {
-            $('.header').removeClass('headerColorChanged');
+            $('header').removeClass('headerColorChanged');
             $('.header-list a').removeClass('headerTextChanged');
         }
     });

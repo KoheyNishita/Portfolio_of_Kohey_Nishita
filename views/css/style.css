@@ -281,7 +281,7 @@ a:hover {
 
 /* Header */
 
-.header {
+header {
     font-family: 'Kaisotai';
     width: 100%;
     height: 64px;
@@ -376,7 +376,7 @@ nav {
         margin: auto 0;
     }
 
-    .header {
+    header {
         height: 120px;
     }
 
@@ -388,6 +388,22 @@ nav {
         font-weight: 700;
         font-size: 72px;
         color: #002e4e;
+    }
+
+    .bg-light {
+        height: 120px;
+    }
+
+    .navbar-light .navbar-toggler {
+        margin-left: 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-size: 90px;
+        width: 90px;
+        height: 80px;
     }
 }
 
