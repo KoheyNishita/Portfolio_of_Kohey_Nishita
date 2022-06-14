@@ -37,10 +37,6 @@ body {
 }
 
 @media screen and (max-width: 479px) {
-    .top {
-        background-image: url("../img/back/sp_00.jpg");
-    }
-
     .container {
         padding: 0;
     }
