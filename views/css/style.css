@@ -48,6 +48,10 @@ body {
     .main {
         width: calc(100% - 60px);
     }
+
+    #back-js {
+        background-image: none;
+    }
 }
 
 /* Parts */
@@ -573,6 +577,14 @@ nav {
 .container {
     width: 90%;
     padding: 88px 0;
+}
+
+@media screen and (max-width: 479px) {
+    .page {
+        background-image: url("../img/back/sp_01.jpg");
+        background-repeat: repeat-y;
+        background-position: fixed;
+    }
 }
 
 /* Page 00: Top Page */
@@ -1207,13 +1219,13 @@ h1 {
 
 footer {
     background-color: rgba(24, 24, 24, 0.3);
+    height: 64px;
+    margin-top: -64px;
     display: block;
     padding: 0 28px;
-    margin-top: -64px;
 }
 
 .footer-container {
-    height: 64px;
     display: flex;
     align-items: center;
 }
@@ -1232,8 +1244,9 @@ footer {
 }
 
 @media screen and (max-width: 479px) {
-    .footer-container {
+    footer {
         height: 120px;
+        margin-top: -120px;
     }
 
     .footer-container p {
