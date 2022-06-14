@@ -389,22 +389,6 @@ nav {
         font-size: 72px;
         color: #002e4e;
     }
-
-    .bg-light {
-        height: 120px;
-    }
-
-    .navbar-light .navbar-toggler {
-        margin-left: 20px;
-        width: fit-content;
-        height: fit-content;
-    }
-
-    .navbar-light .navbar-toggler-icon {
-        background-size: 90px;
-        width: 90px;
-        height: 80px;
-    }
 }
 
 /* Header - Corner Line */
