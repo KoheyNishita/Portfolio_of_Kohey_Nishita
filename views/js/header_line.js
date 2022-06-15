@@ -17,29 +17,39 @@ $(function () {
             $('#page01').addClass('fixedLine');
         } else {
             $('#page01').removeClass('fixedLine');
-            $('#page01').css({'position':'fixed'});
-
+            $('#page01').css({ 'position': 'fixed' });
         }
 
         if ($(window).scrollTop() > $offset2.top - 66) {
             $('#page02').addClass('fixedLine');
         } else {
             $('#page02').removeClass('fixedLine');
-            $('#page02').css({'position':'fixed'});
+            $('#page02').css({ 'position': 'fixed' });
         }
 
         if ($(window).scrollTop() > $offset3.top - 66) {
             $('#page03').addClass('fixedLine');
         } else {
             $('#page03').removeClass('fixedLine');
-            $('#page03').css({'position':'fixed'});
+            $('#page03').css({ 'position': 'fixed' });
         }
 
-        if ($(window).scrollTop() > $offset4.top - 66) {
-            $('#page04').addClass('fixedLine');
+        if (window.matchMedia("(max-width: 479px)").matches) {
+            // windowの幅が479px以下（Smartphone）
+            if ($(window).scrollTop() > $offset4.top - 960) {
+                $('#page04').addClass('fixedLine');
+            } else {
+                $('#page04').removeClass('fixedLine');
+                $('#page04').css({ 'position': 'fixed' });
+            }
         } else {
-            $('#page04').removeClass('fixedLine');
-            $('#page04').css({'position':'fixed'});
+            // windowの幅が479px以上（PC）
+            if ($(window).scrollTop() > $offset4.top - 66) {
+                $('#page04').addClass('fixedLine');
+            } else {
+                $('#page04').removeClass('fixedLine');
+                $('#page04').css({ 'position': 'fixed' });
+            }
         }
     });
 });
