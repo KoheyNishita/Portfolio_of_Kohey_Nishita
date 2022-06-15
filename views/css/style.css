@@ -985,7 +985,7 @@ h1 {
 
 @media screen and (max-width: 479px) {
     .skills-level {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .skills-largebox {
@@ -1113,7 +1113,7 @@ h1 {
     }
 
     .social-list td p {
-        font-size: 32px;
+        font-size: 34px;
         max-width: max-content;
         margin: -24px 0 0 16px;
     }
@@ -1123,8 +1123,8 @@ h1 {
     }
 
     .carrer-list {
-        font-size: 32px;
-        max-width: 720px;
+        font-size: 34px;
+        max-width: 760px;
     }
 
     .carrer-list td span {
