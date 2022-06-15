@@ -36,11 +36,13 @@ $(function () {
 
         if (window.matchMedia("(max-width: 479px)").matches) {
             // windowの幅が479px以下（Smartphone）
-            if ($(window).scrollTop() > $offset4.top - 960) {
+            if ($(window).scrollTop() > $offset4.top / 1.15) {
                 $('#page04').addClass('fixedLine');
             } else {
                 $('#page04').removeClass('fixedLine');
                 $('#page04').css({ 'position': 'fixed' });
+                console.log($offset4);
+                console.log($offset3);
             }
         } else {
             // windowの幅が479px以上（PC）
