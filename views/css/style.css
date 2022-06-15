@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans JP', 'メイリオ', 'Meiryo';
+    font-family: 'Noto Sans JP', 'メイリオ', 'Meiryo', 'ヒラギノ角ゴシック', sans-serif;
     color: #fff;
     box-sizing: border-box;
     width: 100%;
