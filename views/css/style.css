@@ -697,9 +697,9 @@ h1 {
 
 .works-about .line {
     width: 4px;
-    height: 32px;
+    height: 26px;
     background-color: #fff;
-    margin: 1px 7px 0px 0;
+    margin-right: 7px;
 }
 
 .works-about .text {
